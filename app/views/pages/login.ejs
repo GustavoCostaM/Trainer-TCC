@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <%- include("../templates/head.ejs") %>
+		<link href="/css/login.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%- data.page %></title>
+	</head>
+	<body>
+		<%- include("../templates/header-logo.ejs") %>
+
+		<main>
+			<h3>REALIZE O <span>LOGIN:</span></h3>
+
+			<form action="/login" method="post">
+                <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
+
+				<label for="email">E-mail:</label>
+				<input type="email" placeholder="exemplo@email.com" name="email" id="email"
+                <%- data.input_values ? `value="${data.input_values.email}"` : "" %>
+                <%- data.errors && data.errors.email_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.email_error ? `<span class='erro-mensagem'>${data.errors.email_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="senha">Senha:</label>
+				<input type="password" placeholder="••••••••••" name="senha" id="senha"
+                <%- data.input_values ? `value="${data.input_values.senha}"` : "" %>
+                <%- data.errors && data.errors.senha_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.senha_error ? `<span class='erro-mensagem'>${data.errors.senha_error.msg}</span>` : "" %>
+                <br />
+
+				<input type="submit" value="Entrar" id="entrar" />
+			</form>
+
+			<div>
+				<i class="bx bxl-facebook-square"></i>
+				<i class="bx bxl-linkedin"></i>
+				<i class="bx bxl-google"></i>
+			</div>
+			<a href="/cadastro"> Ou cadastre-se <span>aqui!</span></a
+			><br />
+		</main>
+
+        <%- include("../templates/footer.ejs") %>
+	</body>
+</html>

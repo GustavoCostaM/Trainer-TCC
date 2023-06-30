@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<%- include("../templates/head.ejs") %>
+        <link rel="stylesheet" href="/css/cadastro.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%- data.page %></title>
+	</head>
+	<body>
+		<%- include("../templates/header-logo.ejs") %>
+
+		<main>
+			<img src="trainerv2.png" />
+			<h3>CADASTRE-SE COMO:</h3>
+			<button>Usuário</button>
+			<button>personal</button><br />
+
+			<h4>ADCIONE UMA FOTO DE PERFIL</h4>
+			<h1><i class="bx bxs-user-circle"></i></h1>
+			<i class="bx bxs-camera"></i>
+			<p>Tirar uma foto</p>
+			<br />
+			<i class="bx bxs-cloud"></i>
+			<p>Escolher na biblioteca</p>
+			<br />
+
+			<form action="/cadastro" method="post">
+                <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
+
+                <label for="nome">NOME:</label>
+				<input type="text" name="nome" id="nome"
+                <%- data.input_values ? `value="${data.input_values.nome}"` : "" %>
+                <%- data.errors && data.errors.nome_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.nome_error ? `<span class='erro-mensagem'>${data.errors.nome_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="nome_de_usuario">NOME DE USUÁRIO:</label>
+				<input name="nome_de_usuario" id="nome_de_usuario"
+                <%- data.input_values ? `value="${data.input_values.nome_de_usuario}"` : "" %>
+                <%- data.errors && data.errors.nome_de_usuario_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.nome_de_usuario_error ? `<span class='erro-mensagem'>${data.errors.nome_de_usuario_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="email">E-MAIL:</label>
+				<input name="email" id="email"
+                <%- data.input_values ? `value="${data.input_values.email}"` : "" %>
+                <%- data.errors && data.errors.email_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.email_error ? `<span class='erro-mensagem'>${data.errors.email_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="senha">SENHA:</label>
+				<input name="senha" id="senha"
+                <%- data.input_values ? `value="${data.input_values.senha}"` : "" %>
+                <%- data.errors && data.errors.senha_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.senha_error ? `<span class='erro-mensagem'>${data.errors.senha_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="confirmacao_senha">CONFIRMAÇÃO DE SENHA:</label>
+				<input name="confirmacao_senha" id="confirmacao_senha"
+                <%- data.input_values ? `value="${data.input_values.confirmacao_senha}"` : "" %>
+                <%- data.errors && data.errors.confirmacao_senha_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.confirmacao_senha_error ? `<span class='erro-mensagem'>${data.errors.confirmacao_senha_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="telefone">TELEFONE:</label>
+				<input name="telefone" id="telefone"
+                <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>
+                <%- data.errors && data.errors.telefone_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.telefone_error ? `<span class='erro-mensagem'>${data.errors.telefone_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="endereco">ENDEREÇO</label>
+				<label for="logradouro">LOGRADOURO</label>
+				<input name="logradouro" id="logradouro"
+                <%- data.input_values ? `value="${data.input_values.logradouro}"` : "" %>
+                <%- data.errors && data.errors.logradouro_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.logradouro_error ? `<span class='erro-mensagem'>${data.errors.logradouro_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="numero_residencial">N°</label>
+				<input name="numero_residencial" id="numero_residencial"
+                <%- data.input_values ? `value="${data.input_values.numero_residencial}"` : "" %>
+                <%- data.errors && data.errors.numero_residencial_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.numero_residencial_error ? `<span class='erro-mensagem'>${data.errors.numero_residencial_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="bairro">BAIRRO:</label>
+				<input name="bairro" id="bairro"
+                <%- data.input_values ? `value="${data.input_values.bairro}"` : "" %>
+                <%- data.errors && data.errors.bairro_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.bairro_error ? `<span class='erro-mensagem'>${data.errors.bairro_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="cidade">CIDADE:</label>
+				<input name="cidade" id="cidade"
+                <%- data.input_values ? `value="${data.input_values.cidade}"` : "" %>
+                <%- data.errors && data.errors.cidade_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.cidade_error ? `<span class='erro-mensagem'>${data.errors.cidade_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="estado">ESTADO:</label>
+				<input name="estado" id="estado"
+                <%- data.input_values ? `value="${data.input_values.estado}"` : "" %>
+                <%- data.errors && data.errors.estado_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.estado_error ? `<span class='erro-mensagem'>${data.errors.estado_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="cep">CEP:</label>
+				<input name="cep" id="cep"
+                <%- data.input_values ? `value="${data.input_values.cep}"` : "" %>
+                <%- data.errors && data.errors.cep_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.cep_error ? `<span class='erro-mensagem'>${data.errors.cep_error.msg}</span>` : "" %>
+                <br />
+
+                <button>CADASTRAR</button><br />
+			</form>
+
+			<p>Entrar com:</p>
+			<br />
+			<i class="bx bxl-instagram"></i>
+			<i class="bx bxl-facebook-square"></i>
+			<i class="bx bxl-google"></i><br />
+			<br />
+			<i class="bx bx-square-rounded"></i>
+			<p>Eu concordo com todas as políticas de privacidade</p>
+			<br />
+			<h6>Já tem uma conta? Login</h6>
+			<br />
+		</main>
+
+		<%- include("../templates/footer.ejs") %>
+	</body>
+</html>

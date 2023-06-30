@@ -1,0 +1,441 @@
+#svg {
+    width: 200px;
+    height: 32px;
+    box-sizing: border-box;
+  }
+  #line {
+    width: 320px;
+    height: 1px;
+    transform: rotate(-0.07984708160226085deg);
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #797979;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+  }
+  #cadastre-se-como {
+    width: 185px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #usuário {
+    width: 140px;
+    height: 40px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    border-bottom: 1px solid #797979;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+  }
+  #personal {
+    width: 140px;
+    height: 40px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    border-bottom: 1px solid #797979;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+  }
+  #adicione-uma-foto-de {
+    width: 219px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #foto-perfil {
+    width: 96px;
+    height: 101px;
+    background-color: #ffffff;
+  }
+  #nome {
+    width: 48px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #insira-aqui {
+    width: 74px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #rectangle {
+    width: 318px;
+    height: 27px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 8px;
+    border: 1px solid #f67440;
+    background-color: rgba(245, 154, 35, 0);
+    box-sizing: border-box;
+  }
+  #nome-de-usuário {
+    width: 137px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #insira-aqui {
+    width: 74px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #rectangle {
+    width: 318px;
+    height: 27px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 8px;
+    border: 1px solid #f67440;
+    background-color: rgba(245, 154, 35, 0);
+    box-sizing: border-box;
+  }
+  #e-mail {
+    width: 52px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #exemplo-email-com {
+    width: 128px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #rectangle {
+    width: 318px;
+    height: 27px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 8px;
+    border: 1px solid #f67440;
+    background-color: rgba(245, 154, 35, 0);
+    box-sizing: border-box;
+  }
+  #senha {
+    width: 52px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #element {
+    width: 58px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #rectangle {
+    width: 318px;
+    height: 27px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 8px;
+    border: 1px solid #f67440;
+    background-color: rgba(245, 154, 35, 0);
+    box-sizing: border-box;
+  }
+  #confirmação-de-senha {
+    width: 183px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #element {
+    width: 58px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #rectangle {
+    width: 318px;
+    height: 27px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 8px;
+    border: 1px solid #f67440;
+    background-color: rgba(245, 154, 35, 0);
+    box-sizing: border-box;
+  }
+  #telefone {
+    width: 74px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #xx--91234-5678 {
+    width: 98px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #rectangle {
+    width: 318px;
+    height: 27px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 8px;
+    border: 1px solid #f67440;
+    background-color: rgba(245, 154, 35, 0);
+    box-sizing: border-box;
+  }
+  #endereço {
+    width: 428px;
+    height: 73px;
+    background-color: #ffffff;
+  }
+  #shape {
+    width: 24px;
+    height: 24px;
+    padding: 2px 2px 2px 2px;
+    background-color: #f76c35;
+    box-sizing: border-box;
+  }
+  #shape {
+    width: 24px;
+    height: 24px;
+    padding: 2px 2px 2px 2px;
+    background-color: #f67440;
+    box-sizing: border-box;
+  }
+  #shape {
+    width: 24px;
+    height: 24px;
+    padding: 2px 2px 2px 2px;
+    background-color: #f67440;
+    box-sizing: border-box;
+  }
+  #cadastrar {
+    width: 217px;
+    height: 33px;
+    background-color: #ffffff;
+  }
+  #cadastrar {
+    width: 119px;
+    height: 33px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Bold", "Open Sans", "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+    line-height: normal;
+  }
+  #eu-concordo-com-toda {
+    width: 217px;
+    height: 36px;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid #f76c35;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+  #já-tem-uma-conta--lo {
+    width: 166px;
+    height: 19px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Open Sans Semibold", "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #svg {
+    width: 110px;
+    height: 18px;
+    box-sizing: border-box;
+  }
+  #line {
+    width: 329px;
+    height: 2px;
+    transform: rotate(-0.13218976502154683deg);
+    padding: 2px 2px 2px 2px;
+    border: 1px solid #797979;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+  }
+  #shape {
+    width: 24px;
+    height: 24px;
+    padding: 2px 2px 2px 2px;
+    background-color: #f76c35;
+    box-sizing: border-box;
+  }
+  #shape {
+    width: 29px;
+    height: 24px;
+    padding: 2px 2px 2px 2px;
+    background-color: #f67440;
+    box-sizing: border-box;
+  }
+  #shape {
+    width: 24px;
+    height: 24px;
+    padding: 2px 2px 2px 2px;
+    background-color: #f67440;
+    box-sizing: border-box;
+  }
+  #institucional {
+    width: 107px;
+    height: 21px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial Bold", "Arial Normal", "Arial", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #sobre {
+    width: 35px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #fale-conosco {
+    width: 78px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #fale-conosco {
+    width: 78px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #politicas-de-privaci {
+    width: 137px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #corporativo {
+    width: 103px;
+    height: 21px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial Bold", "Arial Normal", "Arial", sans-serif;
+    font-weight: 700;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #indique-um-personal {
+    width: 118px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  #divulgue-seu-trabalh {
+    width: 126px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    color: #333333;
+    text-align: left;
+    line-height: normal;
+  }
+  
+  main form input.erro {
+    border-color: red;
+}
+
+main form span.erro-mensagem {
+    font-size: 80%;
+    color: red;
+}
