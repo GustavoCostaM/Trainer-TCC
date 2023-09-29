@@ -24,9 +24,7 @@ hr{
   margin: auto;
 }
 #menuLogin{
-  display: grid;
-  grid-template-columns: 50%;
-  grid-auto-rows: 26px;
+  display: relative;
 }
 
 #menuToggle {
@@ -56,7 +54,7 @@ hr{
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -91,7 +89,7 @@ hr{
       width: 300px;
       margin: -100px 0 0 -50px;
       padding: 50px;
-      padding-top: 125px; background: #ededed;
+      padding-top: 125px; background: #f76c35;
       list-style-type: none;
       transform-origin: 0% 0%; transform: translate(-100%, 0);
       transition: transform 0.5s cubic-bezier (0.77,0.2,0.05,1.0);
