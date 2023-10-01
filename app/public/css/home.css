@@ -86,15 +86,16 @@ hr{
     }
 
   #menu {
+    border-radius: 0 3% 3% 0;
       position: absolute;
-      width: 300px;
-      margin: -100px 0 0 -50px;
+      width: auto;
+      margin: 10px 0 0 -15px;
       padding: 50px;
       background: #f76c35;
       list-style-type: none;
       transform-origin: 0% 0%;
       transform: translate(-100%, 0);
-      transition: transform 0.5s cubic-bezier (0.77,0.2,0.05,1.0);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
      }
     
   #menu li
@@ -109,7 +110,6 @@ hr{
 
 #bLogin{
   text-align: right;
-  grid-column-start: 2;
   align-self: center;
   height: 100%;
   width: 50%;
