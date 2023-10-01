@@ -125,7 +125,7 @@ button.login {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 105%;
+    font-size: 110%;
   }
 
  #busca{
@@ -349,7 +349,7 @@ main section h5{
 }
 
 #personais div{
-  width: 50%;
+  width: 95%;
   margin: 5% 0 0 2%;
   text-align: left ;
 }
@@ -370,7 +370,6 @@ main section h5{
   margin: 5% 2% 0 0;
   color: #f76c35;
   text-align: right;
-  width: 20%;
   font-size: 130%;
 }
 

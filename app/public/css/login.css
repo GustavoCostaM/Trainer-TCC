@@ -45,7 +45,8 @@ main form label{
 }
 
 main form input{
-  height: 20px;
+  font-size: 110%;
+  height: 30px;
   border-width: 1px;
   border-style: solid;
   width: 100%;
