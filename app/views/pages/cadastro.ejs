@@ -115,10 +115,13 @@
                 <br />
 
 				<label for="estado">ESTADO:</label>
-				<input type="text" placeholder="Insisa aqui..."  name="estado" id="estado"
+				<select id="estados" name="estados">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapá">Amapá</option>
                 <%- data.input_values ? `value="${data.input_values.estado}"` : "" %>
                 <%- data.errors && data.errors.estado_error ? `class="erro"` : "" %>
-                /><br />
+                </select> <br />
 
                 <%- data.errors && data.errors.estado_error ? `<span class='erro-mensagem'>${data.errors.estado_error.msg}</span>` : "" %>
                 <br />
