@@ -158,7 +158,7 @@ button.login {
     outline: none;
   }
 
-section.carrossel{
+#sectionCarrossel{
   height: 1px;
   position: sticky;
 }
@@ -223,6 +223,10 @@ section.carrossel{
   z-index: 10;
 }
 
+#infTrainer{
+  margin: auto;
+  width: 95%;
+}
 
 #oqÉ{
   font-family: 'Open Sans', 'Inter', sans-serif;
@@ -230,7 +234,7 @@ section.carrossel{
   color: #000000;
   text-align: center;
   font-size: 120%;
-  margin-top: 80%;
+  margin-top: 75%;
   letter-spacing: -1px;
 }
 
@@ -294,6 +298,11 @@ main section h5{
   text-align: center;
   font-family: 'Open Sans', 'Inter', sans-serif;
   font-weight: bold;
+}
+
+#personal{
+  width: 95%;
+  margin: auto;
 }
 
 #personal h3{
