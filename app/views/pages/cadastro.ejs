@@ -115,13 +115,10 @@
                 <br />
 
 				<label for="estado">ESTADO:</label>
-				<select id="estados" name="estados">
-                    <option value="acre">Acre</option>
-                    <option value="alagoas">Alagoas</option>
-                    <option value="amapá">Amapá</option>
+				<input type="text" placeholder="Insisa aqui..."  name="estado" id="estado">
                 <%- data.input_values ? `value="${data.input_values.estado}"` : "" %>
                 <%- data.errors && data.errors.estado_error ? `class="erro"` : "" %>
-                </select> <br />
+                /> <br />
 
                 <%- data.errors && data.errors.estado_error ? `<span class='erro-mensagem'>${data.errors.estado_error.msg}</span>` : "" %>
                 <br />
@@ -143,7 +140,7 @@
 				<i class="bx bxl-linkedin"></i>
 				<i class="bx bxl-google"></i>
 			</div>
-			<a href="/login"></a><h6>Já tem uma conta? <span>Login</span></h6>
+			<a href="/login"><h6>Já tem uma conta? <span>Login</span></h6></a>
 			<br />
 		</main>
 
