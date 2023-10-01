@@ -57,8 +57,9 @@ hr{
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier (0.77,0.2,0.05,1.0), background 0.5s cubic-bezier (0.77,0.2,0.05,1.0),
-  opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
   }
   
   #menuToggle span:first-child {
@@ -86,11 +87,11 @@ hr{
     }
 
   #menu {
-    border-radius: 0 3% 3% 0;
+    border-radius: 0 10px 10px 0;
       position: absolute;
-      width: auto;
+      width: 550%;
       margin: 10px 0 0 -15px;
-      padding: 50px;
+      padding: 15px 0 0 15px;
       background: #f76c35;
       list-style-type: none;
       transform-origin: 0% 0%;
