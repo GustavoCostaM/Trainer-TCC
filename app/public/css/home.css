@@ -72,7 +72,7 @@ hr{
   }
 
   #menuToggle input:checked ~ span {
-    width: 39px;
+    width: 36px;
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
@@ -421,6 +421,7 @@ footer hr{
 }
 
 #links a{
+  font-size: 90%;
   color: #555555;
   font-family: 'Open Sans', 'Inter', sans-serif;
   text-decoration: none;

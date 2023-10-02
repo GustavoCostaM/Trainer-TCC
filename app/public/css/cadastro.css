@@ -153,6 +153,7 @@ footer hr{
 }
 
 #links a{
+  font-size: 90%;
   color: #555555;
   font-family: 'Open Sans', 'Inter', sans-serif;
   text-decoration: none;
