@@ -101,8 +101,10 @@ hr{
     
   #menu li
       {
+      text-decoration: none;
+      color: write;
       padding: 10px 0;
-      font-size: 22px;
+      font-size: 100%;
       }
       /* Vamos deslizar da esquerda */
   #menuToggle input:checked ~ ul {
