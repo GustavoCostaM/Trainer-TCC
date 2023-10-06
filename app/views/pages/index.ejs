@@ -12,7 +12,7 @@
 		<%- include("../templates/header.ejs") %>
 
 <main>
-	<section id="sectionCarrossel" onLoad="slide1()">
+	<section id="sectionCarrossel">
     <ul id="carrossel">
         <li>
             <input type="radio" id="slide1" name="slide" checked />
@@ -67,13 +67,9 @@
 						<p>@silvio.andrade</p>
 						<p>Profissional em Atletismo</p>
 					</div>
-					<i class="bx bx-bookmark"></i>
-					<!--<img src="/imagens/starc.svg">
-            <img src="/imagens/starc.svg">
-            <img src="/imagens/starc.svg">
-            <img src="/imagens/starc.svg">
-            <img src="/imagens/stari.svg">
-            <h6>4,5</h6>-->
+					<i class="bx bx-bookmark" id="salvar"></i>
+					<input type="checkbox">
+					<i class="bx bxs-bookmark" id="salvo"></i>
 				</div>
 
 				<div id="personais">
@@ -84,8 +80,9 @@
 						<p>@fernando personal</p>
 						<p>Profissional em CrossFit</p>
 					</div>
-					<i class="bx bx-bookmark"></i>
-
+					<i class="bx bx-bookmark" id="salvar"></i>
+					<input type="checkbox">
+					<i class="bx bxs-bookmark" id="salvo"></i>
 				</div>
 
 				<div id="personais">
@@ -96,8 +93,9 @@
 						<p>@beatrizyang</p>
 						<p>Profissional em Dança</p>
 					</div>
-					<i class="bx bx-bookmark"></i>
-
+					<i class="bx bx-bookmark" id="salvar"></i>
+					<input type="checkbox">
+					<i class="bx bxs-bookmark" id="salvo"></i>
 				</div>
 				<h5 id="vejaMais">VEJA MAIS!</h5>
 			</Section>

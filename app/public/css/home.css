@@ -375,6 +375,14 @@ main section h5{
   font-size: 130%;
 }
 
+#personais input {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* esconder isso */
+  z-index: 2; /* e coloque sobre o hamburger */
+  }
+  
 #vejaMais{
   color: #f76c35;
   text-align: right;
