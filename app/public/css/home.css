@@ -371,6 +371,7 @@ main section h5{
 
 #divSalvar{
   margin: 5% 2% 0 0;
+  width: 5%;
 }
 
 #personais i{
@@ -382,6 +383,9 @@ main section h5{
 
 #salvo{
   opacity: 0;
+  transform: translate(-100%, 0);
+  transform-origin: 0% 0%;
+  transition: none;
 }
 
 #personais input {
