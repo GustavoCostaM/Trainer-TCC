@@ -368,20 +368,33 @@ main section h5{
   font-size: 100%;
   text-align: left ;
 }
-#personais i{
+
+#divSalvar{
   margin: 5% 2% 0 0;
+}
+
+#personais i{
+  position: absolute;
   color: #f76c35;
   text-align: right;
   font-size: 130%;
 }
 
+#salvo{
+  opacity: 0;
+}
+
 #personais input {
   display: block;
-  position: absolute;
+  position: relative;
   cursor: pointer;
   opacity: 0; /* esconder isso */
   z-index: 2; /* e coloque sobre o hamburger */
   }
+
+#divSalvar input:checked ~ #salvo{
+  transform: none;
+}
   
 #vejaMais{
   color: #f76c35;
