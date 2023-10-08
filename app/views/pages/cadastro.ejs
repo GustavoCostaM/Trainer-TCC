@@ -63,7 +63,7 @@
                 <br />
 
 				<label for="telefone">TELEFONE:</label>
-				<input type="tel" placeholder="00999999999" name="telefone" id="telefone"
+				<input type="tel" placeholder="(00) 99999-9999" name="telefone" id="telefone" onkeyup="handlePhone(event)"
                 <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>
                 <%- data.errors && data.errors.telefone_error ? `class="erro"` : "" %>
                 /><br />
