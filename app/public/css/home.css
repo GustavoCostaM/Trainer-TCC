@@ -350,19 +350,19 @@ main section h5{
   text-align: center;
 }
 
-#personais div:first-child{
+#personais #dados{
   width: 95%;
   margin: 5% 0 0 2%;
   text-align: left ;
 }
 
-#personais div h5{
+#personais #dados h5{
   margin-bottom: 3%;
   font-size: 130%;
   text-align: left ;
 }
 
-#personais div p{
+#personais #dados p{
   margin-bottom: 2%;
   color: #555555;
   font-size: 100%;
@@ -396,6 +396,7 @@ main section h5{
 
 #divSalvar input:checked ~ #salvo{
   opacity: 1;
+  transform: rotate(0deg) scale(0.2, 0.2);
 
 }
   
