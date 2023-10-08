@@ -78,7 +78,8 @@ hr{
     background: #232323;
     }
     /* Mas vamos esconder o do meio */
-    #menuToggle input:checked ~ span:nth-last-child(3) {    opacity: 0;
+    #menuToggle input:checked ~ span:nth-last-child(3) {    
+    opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
     } 
     /* e o último deve ir na outra direção */
@@ -379,6 +380,7 @@ main section h5{
   color: #f76c35;
   text-align: right;
   font-size: 130%;
+  z-index: 1;
 }
 
 #salvo{
@@ -396,8 +398,10 @@ main section h5{
 
 #divSalvar input:checked ~ #salvo{
   opacity: 1;
-  transform: rotate(0deg) scale(0.2, 0.2);
+}
 
+#divSalvar input:checked ~ #salvar{
+  opacity: 0;
 }
   
 #vejaMais{
