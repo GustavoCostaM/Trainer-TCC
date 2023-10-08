@@ -101,18 +101,24 @@ hr{
      }
   
   #menu a{
-    color: #f2f2f2;
+    margin-bottom: 8%;
+    color: white;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 110%;
+    font-size: 200%;
     display: flex;
     align-items: center;
-  }  
-   
-  #menu li{
-      padding: 10px 0;
-      }
+  }
+
+  #menu #institucinal{
+    font-size: 100%;
+  }
+  
+  #menu hr{
+    color: white;
+    height: 0.25px;
+    width: 95%;
+  }
 
       /* Vamos deslizar da esquerda */
   #menuToggle input:checked ~ ul {
@@ -397,7 +403,7 @@ main section h5{
 
 #personais input {
   display: block;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   opacity: 0; /* esconder isso */
   z-index: 2; /* e coloque sobre o hamburger */
