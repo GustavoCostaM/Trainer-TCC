@@ -144,7 +144,7 @@ button.login {
     background-color: #f76c35;
     height: 100%;
     width: 12%;
-    font-size: 220%;
+    font-size: 200%;
     float:left;
     border-radius: 6px 0 0 6px;
     text-align: center;
@@ -384,7 +384,7 @@ main section h5{
 }
 
 #salvo{
-  opacity: 0;
+  opacity: 1;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
@@ -399,7 +399,7 @@ main section h5{
   }
 
 #divSalvar input:checked ~ #salvo{
-  opacity: 1;
+  opacity: 0;
 }
 
   
