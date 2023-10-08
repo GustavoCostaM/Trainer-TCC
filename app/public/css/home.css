@@ -114,14 +114,15 @@ hr{
     margin-right: 2%;
   }
 
-  #menu #institucinal{
+  #menu #institucinal a{
     font-size: 100%;
   }
   
   #menu hr{
-    color: white;
+    background-color: white;
     height: 0.25px;
     width: 95%;
+    margin-bottom: 8%;
   }
 
       /* Vamos deslizar da esquerda */
