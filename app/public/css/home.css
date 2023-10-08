@@ -99,14 +99,21 @@ hr{
       transform: translate(-100%, 0);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
      }
-    
-  #menu li
-      {
-      text-decoration: none;
-      color: write;
+  
+  #menu a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+    display: flex;
+    align-items: center;
+  }  
+   
+  #menu li{
       padding: 10px 0;
-      font-size: 100%;
       }
+
       /* Vamos deslizar da esquerda */
   #menuToggle input:checked ~ ul {
       transform: none;
