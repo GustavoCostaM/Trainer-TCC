@@ -105,12 +105,13 @@ hr{
     color: white;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-size: 200%;
+    font-size: 150%;
     display: flex;
     align-items: center;
   }
 
   #menu i{
+    color: white;
     margin-right: 2%;
   }
 
