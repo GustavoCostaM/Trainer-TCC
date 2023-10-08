@@ -395,6 +395,7 @@ main section h5{
   }
 
 #divSalvar input:checked ~ #salvo{
+  opacity: 1;
   transition: none;
 }
   
