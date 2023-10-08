@@ -383,7 +383,7 @@ main section h5{
 
 #salvo{
   opacity: 0;
-  transform: unset;
+  transition: opacity 0.5s ease;
 }
 
 #personais input {
@@ -396,7 +396,7 @@ main section h5{
 
 #divSalvar input:checked ~ #salvo{
   opacity: 1;
-  transition: none;
+
 }
   
 #vejaMais{
