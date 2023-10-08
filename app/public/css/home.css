@@ -110,6 +110,10 @@ hr{
     align-items: center;
   }
 
+  #menu i{
+    margin-right: 2%;
+  }
+
   #menu #institucinal{
     font-size: 100%;
   }
