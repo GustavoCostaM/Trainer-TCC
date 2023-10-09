@@ -118,12 +118,6 @@ footer hr{
   margin-bottom: 5%;
 }
 
-#link{
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
-}
-
 #links h5{
   font-family: 'Open Sans', 'Inter', sans-serif;
   font-weight: bold;

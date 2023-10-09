@@ -430,6 +430,7 @@ main section h5{
 
   
 #vejaMais{
+  text-decoration: none;
   color: #f76c35;
   text-align: right;
   font-family: 'Open Sans', 'Inter', sans-serif;
@@ -459,12 +460,6 @@ footer hr{
   font-size: 250%;
   justify-content: space-between;
   margin-bottom: 5%;
-}
-
-#link{
-  text-align: left;
-  display: flex;
-  justify-content: space-between;
 }
 
 #links h5{
