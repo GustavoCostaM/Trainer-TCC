@@ -26,24 +26,26 @@ body{
   }
 
   h2{
-    margin-bottom: 3%;
+    margin-bottom: auto;
     text-transform: uppercase;
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: bold;
   }
 
   h4{
+    font-weight: bold;
     margin-bottom: 3%;
     text-transform: lowercase;
     text-align: left;
+    font-size: 110%;
   }
 
   h4::first-letter {
     text-transform: uppercase;
   }
 
-  p, li{
+  p{
     margin-bottom: 3%;
     line-height: 1.5;
     text-align: justify;
