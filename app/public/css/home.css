@@ -112,14 +112,17 @@ hr{
 
   #menu i{
     color: white;
-    margin-right: 2%;
+    margin-right: 1%;
   }
 
   #menu #institucional a{
-    font-size: 100%;
+    font-size: 80%;
+    margin-bottom: 2%;
   }
   
   #menu hr{
+    position: relative;
+    text-align: left;
     background-color: white;
     height: 0.25px;
     width: 95%;
