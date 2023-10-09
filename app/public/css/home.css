@@ -428,9 +428,11 @@ main section h5{
   opacity: 1;
 }
 
-  
 #vejaMais{
   text-decoration: none;
+}
+
+#vejaMais h5{
   color: #f76c35;
   text-align: right;
   font-family: 'Open Sans', 'Inter', sans-serif;
