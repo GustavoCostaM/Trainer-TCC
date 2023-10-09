@@ -5,6 +5,8 @@ const homeControllerRead = require("../controllers/homeController/homeController
 
 const politicasControllerRead = require("../controllers/politicasController/politicasControllerRead");
 
+const termosControllerRead = require("../controllers/termosController/termosControllerRead");
+
 const cadastroControllerRead = require("../controllers/cadastroController/cadastroControllerRead");
 const cadastroControllerCreate = require("../controllers/cadastroController/cadastroControllerCreate");
 
@@ -19,6 +21,7 @@ router.get("/", homeControllerRead.viewPage);
 
 router.get("/politicas", politicasControllerRead.viewPage);
 
+router.get("/termos", termosControllerRead.viewPage);
 
 router.get("/login", loginControllerRead.viewPage);
 router.post("/login",
