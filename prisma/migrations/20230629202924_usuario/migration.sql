@@ -11,7 +11,7 @@ CREATE TABLE `Usuario` (
     `bairro` VARCHAR(130) NOT NULL,
     `cidade` VARCHAR(130) NOT NULL,
     `estado` VARCHAR(130) NOT NULL,
-    `cep` CHAR(8) NOT NULL,
+    `cep` VARCHAR(9) NOT NULL,
 
     UNIQUE INDEX `Usuario_email_key`(`email`),
     PRIMARY KEY (`id`)
