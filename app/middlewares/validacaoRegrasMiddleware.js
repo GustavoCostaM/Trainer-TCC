@@ -15,7 +15,7 @@ const regrasValidacao = {
         .withMessage("Insira seu email completo!"),
         body("telefone")
         .trim()
-        .isLength({min: 11, max: 11})
+        .isLength({min: 15, max: 15})
         .withMessage("Insira seu número de telefone! (Apenas números)"),
         body("senha")
         .trim()
@@ -51,7 +51,7 @@ const regrasValidacao = {
         .trim()
         .isInt()
         .withMessage("Digite seu CEP! (Apenas números)")
-        .isLength({min: 8, max: 8})
+        .isLength({min: 9, max: 9})
         .withMessage("Digite seu CEP! (Apenas números)")
     ],
 }

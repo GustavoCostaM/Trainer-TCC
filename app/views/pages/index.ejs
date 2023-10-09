@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <%- include("../templates/head.ejs") %>
 		<link href="/css/home.css" rel="stylesheet" />
+		<script type="text/javascript" src="/js/index.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><%- data.page %></title>
 	</head>
@@ -12,19 +13,19 @@
 		<%- include("../templates/header.ejs") %>
 
 <main>
-	<section id="sectionCarrossel" onLoad="slide1()">
+	<section id="sectionCarrossel">
     <ul id="carrossel">
-        <li>
+        <li onload="slide1">
             <input type="radio" id="slide1" name="slide" checked />
             <label for="slide1"></label>
             <img src="/imagens/slide1.jpg" id="slideImg1">
         </li>
-        <li>
+        <li onload="slide2">
             <input type="radio" id="slide2" name="slide" />
             <label for="slide2"></label>
             <img src="/imagens/slide2.jpg" id="slideImg2">
         </li>
-        <li>
+        <li onload="slide3">
             <input type="radio" id="slide3" name="slide" />
             <label for="slide3"></label>
             <img src="/imagens/slide3.jpg" id="slideImg3"><br />
@@ -34,7 +35,6 @@
 
 	<section id="infTrainer">
 		<h3 id="oqÉ">O QUE É A <span>TRAINER</span> ?</h3>
-		<br />
 		<div id="txtImg">
 			<div>
 				<p>A Trainer é um site para indicar a pessoas que estão a preocura de personais trainer que estaram disponiveis para te ajudar em algo que ele possa te oferecer, com trabalhos em academias próximas de sua casa ou ate mesmo pela internet.</p>
@@ -49,7 +49,6 @@
 			</div>
 		</div>
 		<h5>Encontre o personal adequado <span>para você</span></h5>
-		<br />
 	</section>
 			<Section id="personal">
 				<h3>PERSONAL TRAINERS</h3>
@@ -60,43 +59,47 @@
 
 				<div id="personais">
 					<img src="/imagens/silvio.svg" id="imgPersonal" />
-					<div>
+					<div id="dados">
 						<h5>SILVIO ANDRADE</h5>
 						<p>Salvador-BA</p>
 						<p>@silvio.andrade</p>
 						<p>Profissional em Atletismo</p>
 					</div>
-					<i class="bx bx-bookmark"></i>
-					<!--<img src="/imagens/starc.svg">
-            <img src="/imagens/starc.svg">
-            <img src="/imagens/starc.svg">
-            <img src="/imagens/starc.svg">
-            <img src="/imagens/stari.svg">
-            <h6>4,5</h6>-->
+					<Div id="divSalvar">
+					<input type="checkbox">
+					<i class="bx bx-bookmark" id="salvar"></i>
+					<i class="bx bxs-bookmark" id="salvo"></i>
+					</Div>
 				</div>
 
 				<div id="personais">
 					<img src="/imagens/fernando.svg" />
-					<div>
+					<div id="dados">
 						<h5>FERNANDO COUY</h5>
 						<p>São Paulo-SP</p>
 						<p>@fernando personal</p>
 						<p>Profissional em CrossFit</p>
 					</div>
-					<i class="bx bx-bookmark"></i>
-
+					<div id="divSalvar"> 
+					<input type="checkbox">
+					<i class="bx bx-bookmark" id="salvar"></i>
+					<i class="bx bxs-bookmark" id="salvo"></i>
+					</div>
 				</div>
 
 				<div id="personais">
 					<img src="/imagens/beatriz.svg" />
-					<div>
+					<div id="dados">
 						<h5>BEATRIZ YANG</h5>
 						<p>São Paulo-SP</p>
 						<p>@beatrizyang</p>
 						<p>Profissional em Dança</p>
 					</div>
-					<i class="bx bx-bookmark"></i>
-
+					<div id="divSalvar">
+					<input type="checkbox">
+					<i class="bx bx-bookmark" id="salvar"></i>
+					<i class="bx bxs-bookmark" id="salvo"></i>
+					</div>
 				</div>
 				<h5 id="vejaMais">VEJA MAIS!</h5>
 			</Section>

@@ -78,7 +78,8 @@ hr{
     background: #232323;
     }
     /* Mas vamos esconder o do meio */
-    #menuToggle input:checked ~ span:nth-last-child(3) {    opacity: 0;
+    #menuToggle input:checked ~ span:nth-last-child(3) {    
+    opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
     } 
     /* e o último deve ir na outra direção */
@@ -98,14 +99,40 @@ hr{
       transform: translate(-100%, 0);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
      }
-    
-  #menu li
-      {
-      text-decoration: none;
-      color: write;
-      padding: 10px 0;
-      font-size: 100%;
-      }
+  
+  #menu a{
+    font-weight: bold;
+    margin-bottom: 8%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+  }
+
+  #menu i{
+    color: white;
+    margin-right: 1%;
+  }
+
+  #menu #institucional{
+    margin-bottom: 10%;
+  }
+
+  #menu #institucional a{
+    font-size: 90%;
+    margin-bottom: 2%;
+  }
+  
+  #menu hr{
+    display: -webkit-inline-box;
+    background-color: white;
+    height: 0.25px;
+    width: 95%;
+    margin-bottom: 8%;
+  }
+
       /* Vamos deslizar da esquerda */
   #menuToggle input:checked ~ ul {
       transform: none;
@@ -143,7 +170,7 @@ button.login {
     background-color: #f76c35;
     height: 100%;
     width: 12%;
-    font-size: 220%;
+    font-size: 200%;
     float:left;
     border-radius: 6px 0 0 6px;
     text-align: center;
@@ -247,7 +274,7 @@ button.login {
 #txtImg{
   display: flex;
   align-items: center;
-  margin-bottom: 2%;
+  margin: 8% 0;
 }
 
 /*:root {
@@ -258,7 +285,7 @@ button.login {
 #txtImg p{
   text-align: left;
   font-family: 'Open Sans', 'Inter', sans-serif;
-  font-size: 95%;
+  font-size: 100%;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -273,7 +300,7 @@ button.login {
   display: flex;
   align-items: center;
   font-family: 'Open Sans', 'Inter', sans-serif;
-  margin-bottom: 10%;
+  margin-bottom: 12%;
 }
 #desculpas img{
   width: 45%;
@@ -283,20 +310,21 @@ button.login {
   font-weight: 700;
   text-align: right;
   text-transform: uppercase;
-  font-size: 95%;
-  line-height: 1.5
+  font-size: 100%;
+  line-height: 1.25;
 }
 
 
 #txtDesculpas p{
+  padding-left: 5%;
   text-align: right;
   font-family: 'Open Sans', 'Inter', sans-serif;
-  font-size: 90%;
   font-weight: 300;
   line-height: 1.25;
 }
 
 main section h5{
+  margin-bottom: 3%;
   text-align: center;
   font-family: 'Open Sans', 'Inter', sans-serif;
   font-weight: bold;
@@ -344,37 +372,61 @@ main section h5{
 
 #personais img{
   background-color: #f76c35;
-  width: 30%;
   float:left;
   border-radius: 10px 0 0 10px;
   text-align: center;
 }
 
-#personais div{
+#personais #dados{
   width: 95%;
   margin: 5% 0 0 2%;
   text-align: left ;
 }
 
-#personais div h5{
+#personais #dados h5{
   margin-bottom: 3%;
   font-size: 130%;
   text-align: left ;
 }
 
-#personais div p{
+#personais #dados p{
   margin-bottom: 2%;
   color: #555555;
   font-size: 100%;
   text-align: left ;
 }
+
+#divSalvar{
+  margin: 5% 4% 0 0;
+  width: 5%;
+}
+
 #personais i{
-  margin: 5% 2% 0 0;
+  position: absolute;
   color: #f76c35;
   text-align: right;
   font-size: 130%;
+  z-index: 1;
 }
 
+#salvo{
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#personais input {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* esconder isso */
+  z-index: 2; /* e coloque sobre o hamburger */
+  }
+
+#divSalvar input:checked ~ #salvo{
+  opacity: 1;
+}
+
+  
 #vejaMais{
   color: #f76c35;
   text-align: right;

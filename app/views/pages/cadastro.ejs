@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<%- include("../templates/head.ejs") %>
         <link rel="stylesheet" href="/css/cadastro.css">
+        <script type="text/javascript" src="/js/cadastro.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title><%- data.page %></title>
 	</head>
@@ -63,7 +64,7 @@
                 <br />
 
 				<label for="telefone">TELEFONE:</label>
-				<input type="tel" placeholder="00999999999" name="telefone" id="telefone"
+				<input type="tel" placeholder="(00) 99999-9999" maxlength="15"  name="telefone" id="telefone" onkeyup="handlePhone(event)"
                 <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>
                 <%- data.errors && data.errors.telefone_error ? `class="erro"` : "" %>
                 /><br />
@@ -124,7 +125,7 @@
                 <br />
 
 				<label for="cep">CEP:</label>
-				<input type="number" placeholder="00000000" name="cep" id="cep"
+				<input type="text" placeholder="00000-000" name="cep" id="cep" maxlength="9" onkeyup="handleZipCode(event)"
                 <%- data.input_values ? `value="${data.input_values.cep}"` : "" %>
                 <%- data.errors && data.errors.cep_error ? `class="erro"` : "" %>
                 /><br />
