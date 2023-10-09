@@ -101,6 +101,7 @@ hr{
      }
   
   #menu a{
+    font-weight: bold;
     margin-bottom: 8%;
     color: white;
     text-decoration: none;
@@ -115,14 +116,17 @@ hr{
     margin-right: 1%;
   }
 
+  #menu #institucional{
+    margin-bottom: 10%;
+  }
+
   #menu #institucional a{
-    font-size: 80%;
+    font-size: 90%;
     margin-bottom: 2%;
   }
   
   #menu hr{
-    position: relative;
-    text-align: left;
+    display: -webkit-inline-box;
     background-color: white;
     height: 0.25px;
     width: 95%;
@@ -270,7 +274,7 @@ button.login {
 #txtImg{
   display: flex;
   align-items: center;
-  margin-bottom: 2%;
+  margin: 8% 0;
 }
 
 /*:root {
@@ -281,7 +285,7 @@ button.login {
 #txtImg p{
   text-align: left;
   font-family: 'Open Sans', 'Inter', sans-serif;
-  font-size: 95%;
+  font-size: 100%;
   font-weight: 300;
   line-height: 1.25;
 }
