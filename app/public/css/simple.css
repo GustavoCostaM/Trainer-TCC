@@ -19,22 +19,33 @@ body{
   }
 
   main{
+    margin: auto;
     color: rgb(43, 43, 43);
     width: 90%;
     font-family:'Open Sans', 'Inter', sans-serif;
   }
 
   h2{
+    margin-bottom: 3%;
     text-transform: uppercase;
     text-align: center;
+    font-size: 200%;
+    font-weight: bold;
   }
 
   h4{
-    text-transform: capitalize;
+    margin-bottom: 3%;
+    text-transform: lowercase;
     text-align: left;
   }
 
+  h4::first-letter {
+    text-transform: uppercase;
+  }
+
   p, li{
+    margin-bottom: 3%;
+    line-height: 1.5;
     text-align: justify;
   }
 
