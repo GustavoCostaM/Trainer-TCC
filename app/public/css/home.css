@@ -455,8 +455,6 @@ footer hr{
 
 #icons{
   margin: auto;
-  width: 50%;
-  display: flex;
   color: #f76c35;
   font-size: 250%;
   justify-content: space-between;
