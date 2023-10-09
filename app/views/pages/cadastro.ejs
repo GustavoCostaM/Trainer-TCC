@@ -125,7 +125,7 @@
                 <br />
 
 				<label for="cep">CEP:</label>
-				<input type="number" placeholder="00000-000" name="cep" id="cep" maxlength="9" onkeyup="handleZipCode(event)"
+				<input type="text" placeholder="00000-000" name="cep" id="cep" maxlength="9" onkeyup="handleZipCode(event)"
                 <%- data.input_values ? `value="${data.input_values.cep}"` : "" %>
                 <%- data.errors && data.errors.cep_error ? `class="erro"` : "" %>
                 /><br />
