@@ -187,10 +187,12 @@
         }
     
     main{
+      width: 95%;
       color: #333333;
     }
 
     h2{
+      margin-top: 10%;
       text-transform: uppercase;
       font-size: 175%;
       font-family: 'Open Sans', 'Inter', sans-serif;
