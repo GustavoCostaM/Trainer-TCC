@@ -243,6 +243,7 @@
     }
     
     #personais #dados h5{
+      text-transform: uppercase;
       margin-bottom: 3%;
       font-size: 130%;
       text-align: left ;
