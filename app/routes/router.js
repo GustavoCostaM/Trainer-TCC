@@ -3,6 +3,8 @@ const router = express.Router();
 
 const homeControllerRead = require("../controllers/homeController/homeControllerRead");
 
+const personaisControllerRead = require("../controllers/personaisController/personaisControllerRead");
+
 const politicasControllerRead = require("../controllers/politicasController/politicasControllerRead");
 
 const termosControllerRead = require("../controllers/termosController/termosControllerRead");
@@ -18,6 +20,8 @@ const validacaoRegrasMiddleware = require("../middlewares/validacaoRegrasMiddlew
 const validacaoFormulariosMiddleware = require("../middlewares/validacaoFormularioMiddleware");
 
 router.get("/", homeControllerRead.viewPage);
+
+router.get("/personais", personaisControllerRead.viewPage);
 
 router.get("/politicas", politicasControllerRead.viewPage);
 
