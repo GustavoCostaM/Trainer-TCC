@@ -201,6 +201,7 @@
     }
     
     main hr{
+      text-align: center;
       width:10%;
       height: 1px;
       margin-bottom: 5%;
