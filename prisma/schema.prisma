@@ -13,11 +13,11 @@ model Usuario {
     nome_de_usuario    String @db.VarChar(130)
     email              String @unique @db.VarChar(130)
     senha              String @db.Char(60)
-    telefone           String @db.Char(11)
+    telefone           String @db.VarChar(15)
     logradouro         String @db.VarChar(130)
     numero_residencial Int
     bairro             String @db.VarChar(130)
     cidade             String @db.VarChar(130)
     estado             String @db.VarChar(130)
-    cep                String @db.Char(8)
+    cep                String @db.VarChar(9)
 }
