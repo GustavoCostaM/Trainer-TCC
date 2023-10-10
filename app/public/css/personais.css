@@ -228,6 +228,7 @@
     }
     
     #personais img{
+      padding: 4%;
       background-color: #f76c35;
       float:left;
       border-radius: 10px 0 0 10px;
