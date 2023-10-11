@@ -49,7 +49,6 @@ const regrasValidacao = {
         .withMessage("Informe seu estado"),
         body("cep")
         .trim()
-        .isInt()
         .withMessage("Digite seu CEP! (Apenas números)")
         .isLength({min: 9, max: 9})
         .withMessage("Digite seu CEP! (Apenas números)")
