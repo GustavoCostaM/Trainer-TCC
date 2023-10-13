@@ -466,7 +466,8 @@ footer hr{
     background-color: #f9f9f9d1;
   }
 
-  #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, header hr:first-child{
+  #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
+  header hr:first-child{
     display: none;
   }
 
@@ -497,6 +498,26 @@ footer hr{
     color: white;
     margin-right: 1%;
   }
+
+  #bLogin{
+    text-align: right;
+    align-self: center;
+    height: 100%;
+    width: 60%;
+  }
+  
+  button.login {
+      width: 50%;
+      padding: 2px ;
+      border: none;
+      border-radius: 6px;
+      background-color: #f76c35;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-size: 110%;
+    }
+    
   #sectionCarrossel{
     height: 1px;
     position: sticky;
