@@ -586,4 +586,76 @@ footer hr{
   main{
     color: #333333;
   }
+
+  #infTrainer{
+    margin: auto;
+    width: 95%;
+  }
+  
+  #oqÉ{
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 120%;
+    margin-top: 75%;
+    letter-spacing: -1px;
+  }
+  
+  #oqÉ span, #txtDesculpas span, main section h5 span, #personal h4 span{
+    color: #f76c35;
+  }
+  
+  #txtImg{
+    display: flex;
+    align-items: center;
+    margin: 8% 0;
+  }
+  
+  #txtImg p{
+    text-align: left;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+  #txtImg img{
+    width:85%;
+  }
+  #txtImg div{
+    text-align: center;
+  }
+   
+  #desculpas{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    margin-bottom: 12%;
+  }
+  #desculpas img{
+    width: 45%;
+  }
+  
+  #txtDesculpas h5{
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 100%;
+    line-height: 1.25;
+  }
+  
+  
+  #txtDesculpas p{
+    padding-left: 5%;
+    text-align: right;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+  
+  main section h5{
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: bold;
+  }
 }  
