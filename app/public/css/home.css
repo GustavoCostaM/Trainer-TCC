@@ -464,7 +464,7 @@ footer hr{
   }
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
-  header hr:first-child{
+  #cabeçalho hr{
     display: none;
   }
 
@@ -480,8 +480,8 @@ footer hr{
     border: none;
   }
 
-  #menuLogin{
-    
+  #cabeçalho{
+    display: flex;
   }
 
   #menu a{
