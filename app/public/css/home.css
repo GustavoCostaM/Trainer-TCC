@@ -497,11 +497,10 @@ footer hr{
   #menu{
     display: flex;
     justify-content: space-between;
-    margin-right: 50%;
   }
 
   #menu a{
-    margin-right: 3%;
+    margin-right: 15px;
     white-space: nowrap;
     font-weight: bold;
     color:#f76c35;
