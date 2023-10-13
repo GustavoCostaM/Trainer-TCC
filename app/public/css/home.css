@@ -6,6 +6,11 @@
 body{
   background-color: #f9f9f9d1;
 }
+
+header{
+  position: fixed;
+}
+
 #logo{
 width: 60%;
 display: block;
