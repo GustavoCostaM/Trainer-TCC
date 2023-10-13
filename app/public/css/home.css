@@ -24,11 +24,9 @@ hr{
 
 }
 
-#menuLoginPesquisa{
+#menuLogin{
   width: 95%;
   margin: auto;
-}
-#menuLogin{
   display: flex;
   justify-content: space-between;
 }
@@ -517,7 +515,7 @@ footer hr{
       font-weight: bold;
       font-size: 110%;
     }
-    
+
   #sectionCarrossel{
     height: 1px;
     position: sticky;
