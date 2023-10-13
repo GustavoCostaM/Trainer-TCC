@@ -497,4 +497,71 @@ footer hr{
     color: white;
     margin-right: 1%;
   }
+  #sectionCarrossel{
+    height: 1px;
+    position: sticky;
+  }
+  
+  #carrossel {
+      display: block;
+      width: 100%;
+      margin: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      height: 100%;
+  }
+  
+  #carrossel li {
+      list-style: none;
+      position: absolute;
+  }
+  
+  #carrossel img {
+      margin: auto;
+      width: 100%;
+      vertical-align: top;
+  }
+  
+  #carrossel input {
+    display: none;
+  }
+  
+  #carrossel label {
+    background-color: white;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 8px;
+    position: absolute;
+    width: 8px;
+    z-index: 10;
+    border-radius: 2px;
+  }
+  
+  #carrossel li:nth-child(1) label {
+    left: 45%;
+  }
+  
+  #carrossel li:nth-child(2) label {
+    left: 50%;
+  }
+  
+  #carrossel li:nth-child(3) label {
+    left: 55%;
+  }
+  
+  #carrossel img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  #carrossel li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+  }
+  main{
+    color: #333333;
+  }
 }  
