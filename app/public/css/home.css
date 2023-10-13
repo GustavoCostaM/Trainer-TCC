@@ -7,8 +7,8 @@ body{
   background-color: #f9f9f9d1;
 }
 
-header{
-  position: fixed;
+header hr:last-child{
+  display: none;
 }
 
 #logo{
@@ -466,7 +466,7 @@ footer hr{
     background-color: #f9f9f9d1;
   }
 
-  #menuToggle span, #menuToggle input, #menuToggle hr, #institucional{
+  #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, header hr:first-child{
     display: none;
   }
 
