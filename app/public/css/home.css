@@ -7,7 +7,7 @@ body{
   background-color: #f9f9f9d1;
 }
 
-header hr:last-child, #imgHome1_1{
+header hr:last-child, #imgHome1_1, #slideImg1_1, #slideImg2_1, #slideImg3_1{
   display: none;
 }
 
@@ -464,7 +464,7 @@ footer hr{
   }
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
-  #cabeçalho hr, #txtImg img:first-child{
+  #cabeçalho hr, #txtImg img:first-child, #slideImg1, #slideImg2, #slideImg3{
     display: none;
   }
 
@@ -566,9 +566,9 @@ footer hr{
     bottom: 10px;
     cursor: pointer;
     display: block;
-    height: 8px;
+    height: 10px;
     position: absolute;
-    width: 8px;
+    width: 10px;
     z-index: 10;
     border-radius: 2px;
   }
@@ -606,10 +606,10 @@ footer hr{
   
   #oqÉ{
     font-family: 'Open Sans', 'Inter', sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
-    font-size: 120%;
-    margin-top: 75%;
+    font-size: 150%;
+    margin-top: 70%;
     letter-spacing: -1px;
   }
   
@@ -626,14 +626,15 @@ footer hr{
   #txtImg p{
     text-align: left;
     font-family: 'Open Sans', 'Inter', sans-serif;
-    font-size: 100%;
+    font-size: 125%;
     font-weight: 300;
-    line-height: 1.25;
+    line-height: 2;
   }
   #txtImg #imgHome1_1{
     width: 100%;
   }
   #txtImg div{
+    width: 100%;
     text-align: center;
   }
    
