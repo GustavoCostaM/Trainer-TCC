@@ -7,7 +7,7 @@ body{
   background-color: #f9f9f9d1;
 }
 
-header hr:last-child{
+header hr:last-child, #imgHome1_1{
   display: none;
 }
 
@@ -464,7 +464,7 @@ footer hr{
   }
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
-  #cabeçalho hr{
+  #cabeçalho hr, #txtImg img:first-child{
     display: none;
   }
 
@@ -510,7 +510,7 @@ footer hr{
   }
 
   #menu i{
-    color: #333333;
+    color: #f76c35;
     margin-right: 1%;
   }
 
@@ -630,8 +630,8 @@ footer hr{
     font-weight: 300;
     line-height: 1.25;
   }
-  #txtImg img{
-    width:85%;
+  #txtImg #imgHome1_1{
+    width: 100%;
   }
   #txtImg div{
     text-align: center;
