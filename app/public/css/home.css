@@ -491,7 +491,7 @@ footer hr{
     background-color: #f9f9f9d1;
   }
 
-  #menuToggle span, #menuToggle input, #menuToggle hr{
+  #menuToggle span, #menuToggle input, #menuToggle hr, #institucional{
     display: none;
   }
 
