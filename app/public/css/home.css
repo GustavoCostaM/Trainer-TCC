@@ -7,7 +7,8 @@ body{
   background-color: #f9f9f9d1;
 }
 
-header hr:last-child, #imgHome1_1, #slideImg1_1, #slideImg2_1, #slideImg3_1{
+header hr:last-child, #imgHome1_1, #slideImg1_1, #slideImg2_1, 
+#slideImg3_1, #imgHome2_1{
   display: none;
 }
 
@@ -464,7 +465,8 @@ footer hr{
   }
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
-  #cabeçalho hr, #txtImg img:first-child, #slideImg1, #slideImg2, #slideImg3{
+  #cabeçalho hr, #txtImg img:first-child, #slideImg1, #slideImg2, #slideImg3
+  #desculpas img:first-child{
     display: none;
   }
 
@@ -494,7 +496,8 @@ footer hr{
 
   #menu{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-right: 50%;
   }
 
   #menu a{
@@ -563,12 +566,12 @@ footer hr{
   
   #carrossel label {
     background-color: white;
-    bottom: 10px;
+    bottom: 12px;
     cursor: pointer;
     display: block;
-    height: 10px;
+    height: 15px;
     position: absolute;
-    width: 10px;
+    width: 15px;
     z-index: 10;
     border-radius: 2px;
   }
@@ -609,7 +612,7 @@ footer hr{
     font-weight: 900;
     text-align: center;
     font-size: 150%;
-    margin-top: 70%;
+    margin-top: 65%;
     letter-spacing: -1px;
   }
   
@@ -620,7 +623,7 @@ footer hr{
   #txtImg{
     display: flex;
     align-items: center;
-    margin: 8% 0;
+    margin: 3% 2%;
   }
   
   #txtImg p{
@@ -644,8 +647,8 @@ footer hr{
     font-family: 'Open Sans', 'Inter', sans-serif;
     margin-bottom: 12%;
   }
-  #desculpas img{
-    width: 45%;
+  #desculpas #imgHome2_1{
+    width: 80%;
   }
   
   #txtDesculpas h5{
