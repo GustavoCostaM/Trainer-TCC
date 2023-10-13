@@ -471,7 +471,6 @@ footer hr{
   #logo{
   width: 100%;
   display: block;
-  margin: 1.5%;
   }
   
   hr{
@@ -481,34 +480,47 @@ footer hr{
   }
 
   #cabeçalho{
+    margin: 1% auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+  }
+
+  #menuLogin{
+    display: flex;
+    align-items: center;
+  }
+
+  #menu{
+    display: flex;
+    justify-content: space-between
   }
 
   #menu a{
+    margin-right: 2%;
+    white-space: nowrap;
     font-weight: bold;
-    margin: 0 10px;
     color:#f76c35;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-size: 150%;
+    font-size: 125%;
     display: flex;
     align-items: center;
   }
 
   #menu i{
-    color: #f76c35;
+    color: #333333;
     margin-right: 1%;
   }
 
   #bLogin{
     text-align: right;
-    align-self: center;
-    height: 100%;
-    width: 60%;
+    width: 100px;
   }
   
   button.login {
-      width: 50%;
+      width: 80%;
       padding: 2px ;
       border: none;
       border-radius: 6px;
@@ -516,7 +528,7 @@ footer hr{
       color: #ffffff;
       font-family: 'Open Sans', sans-serif;
       font-weight: bold;
-      font-size: 110%;
+      font-size: 120%;
     }
 
   #sectionCarrossel{
