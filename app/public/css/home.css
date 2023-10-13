@@ -486,12 +486,19 @@ footer hr{
   @import url('https://fonts.googleapis.com/css2?family= Inter:wght@100;400;700;900 & display=swap');
 
   body{
+    margin: auto;
+    max-width: 1024px;
     background-color: #f9f9f9d1;
   }
+
+  #menuToggle span, #menuToggle input, #menuToggle hr{
+    display: none;
+  }
+
   #logo{
-  width: 60%;
+  width: 40%;
   display: block;
-  margin: 1.5% auto 0;
+  margin: 1.5%;
   }
   
   hr{
