@@ -749,7 +749,7 @@ footer hr{
     text-align: justify;
   }
 
-  
+
 
   #cardPersonais #salvar, #cardPersonais #salvo{
     position: absolute;
@@ -764,15 +764,15 @@ footer hr{
     transition: opacity 0.2s ease;
   }
   
-  #personais input {
+  #cardPersonais input {
     display: block;
     position: absolute;
     cursor: pointer;
-    opacity: 0; /* esconder isso */
-    z-index: 2; /* e coloque sobre o hamburger */
+    opacity: 0;
+    z-index: 2;
     }
   
-  #divSalvar input:checked ~ #salvo{
+  #cardPersonais input:checked ~ #salvo{
     opacity: 1;
   }
 }  
