@@ -743,6 +743,10 @@ footer hr{
     font-size: 160%;
   }
 
+  #cardPersonais h6{
+    font-size: 140%;
+  }
+
   #cardPersonais p{
     margin-bottom: 5%;
     font-weight: 300;
@@ -763,7 +767,7 @@ footer hr{
   }
 
   #contatos i{
-    font-size: 150%;
+    font-size: 155%;
     color: #f76c35;
   }
 
