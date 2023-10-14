@@ -522,8 +522,9 @@ footer hr{
   }
   
   button.login {
+      height: 37px;
       width: 95%;
-      padding: 2px ;
+      padding: 2px;
       border: none;
       border-radius: 6px;
       background-color: #f76c35;
@@ -669,7 +670,7 @@ footer hr{
   
   #txtDesculpas h5{
     font-weight: 700;
-    text-align: center;
+    text-align: right;
     text-transform: uppercase;
     font-size: 140%;
     line-height: 1.75;
@@ -749,13 +750,28 @@ footer hr{
     text-align: justify;
   }
 
+  #vPerfil{
+    text-transform: uppercase;
+    font-size: 120%;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+    background-color: #f76c35;
+    border: none;
+    width: 85%;
+    height: 35px;
+  }
 
-
-  #cardPersonais #salvar, #cardPersonais #salvo{
+  #divSalvar{
+    display: flex;
+    width: 10%;
+  }
+  #divSalvar i{
     position: absolute;
     color: #f76c35;
     text-align: right;
-    font-size: 130%;
+    font-size: 235%;
     z-index: 1;
   }
   
@@ -764,7 +780,7 @@ footer hr{
     transition: opacity 0.2s ease;
   }
   
-  #cardPersonais input {
+  #divSalvar input {
     display: block;
     position: absolute;
     cursor: pointer;
@@ -772,7 +788,7 @@ footer hr{
     z-index: 2;
     }
   
-  #cardPersonais input:checked ~ #salvo{
+  #divSalvar input:checked ~ #salvo{
     opacity: 1;
   }
 }  
