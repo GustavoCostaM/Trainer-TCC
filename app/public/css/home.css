@@ -466,7 +466,7 @@ footer hr{
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
   #cabeçalho hr, #txtImg img:first-child, #slideImg1, #slideImg2, #slideImg3,
-  #desculpas img:first-child{
+  #desculpas img:first-child, #personais{
     display: none;
   }
 
