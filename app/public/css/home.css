@@ -744,7 +744,9 @@ footer hr{
   }
 
   #cardPersonais h6{
-    font-size: 140%;
+    margin-bottom: 5%;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-size: 110%;  
   }
 
   #cardPersonais p{
@@ -752,6 +754,10 @@ footer hr{
     font-weight: 300;
     line-height: 1.5;
     text-align: justify;
+  }
+
+  #contatos:last-child{
+    margin-bottom: 5%;
   }
 
   #contatos{
@@ -772,7 +778,6 @@ footer hr{
   }
 
   #cardPersonais div:last-child{
-    margin-top: 5%;
     display: flex;
     justify-content: space-between;
   }
