@@ -8,7 +8,7 @@ body{
 }
 
 header hr:last-child, #imgHome1_1, #slideImg1_1, #slideImg2_1, 
-#slideImg3_1, #imgHome2_1{
+#slideImg3_1, #imgHome2_1, #bCadastro{
   display: none;
 }
 
@@ -517,8 +517,8 @@ footer hr{
   }
 
   #bLogin{
-    text-align: right;
-    width: 100px;
+    text-align: center;
+    width: 80px;
   }
   
   button.login {
@@ -528,6 +528,23 @@ footer hr{
       border-radius: 6px;
       background-color: #f76c35;
       color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-size: 120%;
+    }
+
+  #bCadastro{
+    text-align: center;
+    width: 80px;
+  }
+  
+  button.cadastro{
+      width: 80%;
+      padding: 2px ;
+      border:#f76c35 ;
+      border-radius: 6px;
+      background-color: white;
+      color: #f76c35;
       font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       font-size: 120%;
