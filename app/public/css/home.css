@@ -752,6 +752,24 @@ footer hr{
 
   #contatos{
     display: flex;
+    align-items: flex-end;
+  }
+
+  #contatos p{
+    font-size: 125%;
+    font-weight: bold;
+    margin: 0;
+    color: #f76c35;
+  }
+
+  #contatos i{
+    font-size: 150%;
+    color: #f76c35;
+  }
+
+  #cardPersonais div:last-child{
+    display: flex;
+    justify-content: space-between;
   }
 
   #vPerfil{
