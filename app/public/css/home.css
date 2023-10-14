@@ -667,7 +667,7 @@ footer hr{
     width: 55%;
   }
   
-  #section h5{
+  #txtDesculpas h5{
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -685,7 +685,7 @@ footer hr{
     line-height: 2;
   }
   
-  #txtDesculpas h5{
+  main section h5{
     margin-bottom: 3%;
     text-align: center;
     font-family: 'Open Sans', 'Inter', sans-serif;
