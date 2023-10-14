@@ -8,7 +8,7 @@ body{
 }
 
 header hr:last-child, #imgHome1_1, #slideImg1_1, #slideImg2_1, 
-#slideImg3_1, #imgHome2_1, #bCadastro{
+#slideImg3_1, #imgHome2_1, #bCadastro, #cardPersonais{
   display: none;
 }
 
@@ -720,6 +720,59 @@ footer hr{
   #personal p{
     text-align: center;
     font-family: 'Open Sans', 'Inter', sans-serif;
+  }
+
+  #cardPersonais{
+    padding: 1.5% 2%;
+    border-radius: 10px;
+    border: solid 2px #f76c35;
+    width: 30%;
+    text-align: center;
+    background-color: white;
+  }
+
+  #cardPersonais img{
+    border-radius: 100%;
+    border: solid 1px;
+    width: 50%;
+    margin-bottom: 3%;
+  }
+
+  #cardPersonais h5{
+    font-size: 160%;
+  }
+
+  #cardPersonais p{
+    margin-bottom: 5%;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
   
+
+  #cardPersonais #salvar, #cardPersonais #salvo{
+    position: absolute;
+    color: #f76c35;
+    text-align: right;
+    font-size: 130%;
+    z-index: 1;
+  }
+  
+  #salvo{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  #personais input {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* esconder isso */
+    z-index: 2; /* e coloque sobre o hamburger */
+    }
+  
+  #divSalvar input:checked ~ #salvo{
+    opacity: 1;
   }
 }  
