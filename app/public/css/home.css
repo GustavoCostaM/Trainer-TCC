@@ -772,6 +772,7 @@ footer hr{
   }
 
   #cardPersonais div:last-child{
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
   }
