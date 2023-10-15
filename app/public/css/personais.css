@@ -501,10 +501,12 @@
   #cards{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 3%;  
   }
 
   #cardPersonais{
+    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -525,12 +527,12 @@
   }
 
   #cardPersonais h5{
+    font-weight: bold;
     margin-bottom: 1%;
     font-size: 160%;
   }
 
   #cardPersonais #profissional{
-    font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight: bold;
     color: #f76c35;
     text-transform: uppercase;
