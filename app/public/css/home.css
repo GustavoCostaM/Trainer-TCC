@@ -540,6 +540,7 @@ footer hr{
   }
   
   button.cadastro{
+      height: 37px;
       width: 95%;
       padding: 2px;
       border: solid #f76c35;
