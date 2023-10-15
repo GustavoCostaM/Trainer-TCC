@@ -821,6 +821,8 @@ footer hr{
   }
   
   #divSalvar input {
+    width: 25px;
+    height: 25px;
     display: block;
     position: absolute;
     cursor: pointer;
