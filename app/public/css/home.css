@@ -857,7 +857,7 @@ footer hr{
 
   footer{
     width: 80%;
-    margin: 10% auto 10px auto;  
+    margin: 10% auto 50px auto;  
     text-align: center;
   }
   #logoRodape{
@@ -880,11 +880,11 @@ footer hr{
     font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight: bold;
     margin-bottom: 10px;
-    font-size: 115%;
+    font-size: 175%;
   }
   
   #links a{
-    font-size: 90%;
+    font-size: 110%;
     color: #555555;
     font-family: 'Open Sans', 'Inter', sans-serif;
     text-decoration: none;
