@@ -429,6 +429,7 @@
     }
 
   #busca{
+    width: 80%;
     background-color: #f2f2f2;
     border: none;
     border-radius: 6px;
@@ -440,16 +441,20 @@
   #lupa{
     background-color: #f76c35;
     height: 100%;
-    width: 12%;
-    font-size: 200%;
+    width: 10%;
+    font-size: 310%;
     float:left;
     border-radius: 6px 0 0 6px;
     text-align: center;
   }
 
+  .bx-search-alt-2:before{
+    padding: 3px;
+  }
+
   #pesquisa{
     background-color:transparent;
-    font-size:18px;
+    font-size: 150%;
     font-family: Arial, sans-serif;
     border:none;
     height: 100%;
