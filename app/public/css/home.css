@@ -777,7 +777,8 @@ footer hr{
     color: #f76c35;
   }
 
-  #cardPersonais div:last-child{
+  #verPerfil_Salvar{
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
   }
