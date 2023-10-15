@@ -752,8 +752,15 @@ footer hr{
   }
 
   #cardPersonais h5{
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     font-size: 160%;
+  }
+
+  #cardPersonais h6:first-child{
+    color: #f76c35;
+    text-transform: uppercase;
+    font-size: 100%;
+    margin-bottom: 2%;
   }
 
   #cardPersonais h6{
