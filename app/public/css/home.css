@@ -694,7 +694,7 @@ footer hr{
   }
 
   #personal{
-    width: 95%;
+    width: 98%;
     margin: auto;
   }
   
@@ -736,7 +736,7 @@ footer hr{
     padding: 1.5% 2%;
     border-radius: 10px;
     border: solid 2px #f76c35;
-    width: 38%;
+    width: 28%;
     text-align: center;
     background-color: white;
   }
@@ -846,9 +846,8 @@ footer hr{
   
   #vejaMais h5{
     color: #f76c35;
-    text-align: right;
     font-family: 'Open Sans', 'Inter', sans-serif;
-    font-size: 200%;
+    font-size: 175%;
     margin-bottom: 10%;
     font-weight: bold;
   }
