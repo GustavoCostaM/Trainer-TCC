@@ -339,6 +339,7 @@
     margin: auto;
     max-width: 1024px;
     background-color: #f9f9f9d1;
+    font-family: 'Open Sans', 'Inter', sans-serif;
   }
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
@@ -495,6 +496,12 @@
 
   h4 span{
     color:#f76c35;
+  }
+
+  #cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;  
   }
 
   #cardPersonais{
