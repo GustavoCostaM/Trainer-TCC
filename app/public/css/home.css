@@ -811,10 +811,12 @@ footer hr{
   }
 
   #divSalvar{
+    justify-content: flex-end;
     display: flex;
     width: 15%;
   }
   #divSalvar i{
+    margin-right: -5px;
     position: absolute;
     color: #f76c35;
     text-align: right;
@@ -828,7 +830,7 @@ footer hr{
   }
   
   #divSalvar input {
-    width: 25px;
+    width: 20px;
     height: 25px;
     display: block;
     position: absolute;
@@ -874,7 +876,7 @@ footer hr{
     margin-bottom: 10px;
   }
   
-  #links h5{
+  footer h5{
     font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight: bold;
     margin-bottom: 10px;
