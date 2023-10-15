@@ -72,6 +72,16 @@ main form div{
   margin-bottom: 7%;
 }
 
+form p{
+  color: #555555;
+  margin-bottom: 10%;
+}
+
+form p a{
+  text-decoration: revert;
+  color: #555555;
+}
+
 #cadastre-se{
   height: 30px;
   border: none;
