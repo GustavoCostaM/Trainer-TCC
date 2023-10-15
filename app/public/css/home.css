@@ -775,7 +775,8 @@ footer hr{
   }
 
   #contatos i{
-    font-size: 155%;
+    padding: 2px;
+    font-size: 175%;
     color: #f76c35;
   }
 
