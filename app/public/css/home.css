@@ -663,7 +663,7 @@ footer hr{
     display: flex;
     align-items: center;
     font-family: 'Open Sans', 'Inter', sans-serif;
-    margin-bottom: 12%;
+    margin-bottom: 5%;
   }
   #desculpas #imgHome2_1{
     width: 55%;
@@ -700,19 +700,19 @@ footer hr{
   }
   
   #personal h3{
-    font-size: 175%;
+    font-size: 220%;
     font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight: bold;
     text-align: center;
   }
   #personal hr{
-    width:15%;
+    width:10%;
     height: 4px;
     margin-bottom: 5%;
   }
   
   #personal h4{
-    font-size: 115%;
+    font-size: 150%;
     font-family: 'Open Sans', 'Inter', sans-serif;
     text-align: center;
     font-weight: bold;
