@@ -12,7 +12,11 @@
 		<%- include("../templates/header-logo.ejs") %>
 
 		<main>
-			<h3>REALIZE O <span>LOGIN:</span></h3>
+			<div>
+				<img src="/imagens/login.svg">
+			</div>
+			
+			<h3>REALIZE O <span>LOGIN</span></h3>
 
 			<form action="/login" method="post">
                 <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>

@@ -1,6 +1,6 @@
 class LoginController {
     async autorizarUsuario(req, res) {
-        return res.redirect("/");
+        return res.redirect("/perfil");
     }
 }
 

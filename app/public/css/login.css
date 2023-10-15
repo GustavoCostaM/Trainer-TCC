@@ -26,6 +26,8 @@ main{
 }
 
 main h3{
+  margin-top: 10%;
+  font-size: 100%;
   font-weight: bold;
 
 }
@@ -91,7 +93,7 @@ main h3 span, main a span{
 }
 
 main a{
-  font-size: 80%;
+  font-size: 95%;
   text-decoration: none;
   color: black;
 }
@@ -152,7 +154,7 @@ footer h5{
     
   hr{
     height: 2px;
-    background-color: #333333;
+    background-color: #797979;
     border: none;
   }
 
