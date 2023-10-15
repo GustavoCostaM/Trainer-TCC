@@ -757,6 +757,7 @@ footer hr{
   }
 
   #cardPersonais h6:first-child{
+    font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight: bold;
     color: #f76c35;
     text-transform: uppercase;
@@ -764,8 +765,8 @@ footer hr{
     margin-bottom: 2%;
   }
 
-  #cardPersonais h6{
-    margin-bottom: 5%;
+  #cardPersonais h6:last-child{
+    margin-bottom: 8%;
     font-family: 'Open Sans', 'Inter', sans-serif;
     font-size: 110%;  
   }
