@@ -74,11 +74,12 @@ main form div{
 }
 
 form p{
-  font-size: 300;
+  font-weight: 300;
   margin-bottom: 5%;
 }
 
 form p a{
+  font-weight: bold;
   text-decoration: revert;
   color: #333333;
 }
