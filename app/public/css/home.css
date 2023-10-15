@@ -756,7 +756,7 @@ footer hr{
     text-align: justify;
   }
 
-  #cardPersonais div:nth-child(2){
+  #cardPersonais #contato{
     margin-bottom: 5%;
   }
 
