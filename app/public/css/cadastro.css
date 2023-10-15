@@ -170,6 +170,7 @@ footer h5{
   @import url('https://fonts.googleapis.com/css2?family= Inter:wght@100;400;700;900 & display=swap');
 
   body{
+    font-family: 'Open Sans', 'Inter', sans-serif;
     margin: auto;
     max-width: 1024px;
     background-color: #f9f9f9d1;
@@ -193,6 +194,13 @@ footer h5{
     margin: auto;
   }
 
+  main form{
+    width: 75%;
+    margin: 5% auto 2% auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
   main form label{
     font-size: 150%;
     margin-bottom: 2%;
