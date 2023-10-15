@@ -756,7 +756,7 @@ footer hr{
     text-align: justify;
   }
 
-  #contatos:last-child{
+  #cardPersonais div:nth-child(1){
     margin-bottom: 5%;
   }
 
