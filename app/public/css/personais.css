@@ -23,11 +23,9 @@
       
       }
       
-      #menuLoginPesquisa{
+      #menuLogin{
         width: 95%;
         margin: auto;
-      }
-      #menuLogin{
         display: flex;
         justify-content: space-between;
       }
