@@ -434,7 +434,7 @@
     border: none;
     border-radius: 6px;
     height: 50px;
-    margin: 10px auto;
+    margin: 3% auto;
   
   }
 
@@ -442,7 +442,7 @@
     background-color: #f76c35;
     height: 100%;
     width: 10%;
-    font-size: 310%;
+    font-size: 320%;
     float:left;
     border-radius: 6px 0 0 6px;
     text-align: center;
@@ -470,9 +470,9 @@
   }
 
   h2{
-    margin-top: 10%;
+    margin-top: 5%;
     text-transform: uppercase;
-    font-size: 175%;
+    font-size: 220%;
     font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -486,7 +486,7 @@
   }
 
   h4{
-    font-size: 115%;
+    font-size: 120%;
     font-family: 'Open Sans', 'Inter', sans-serif;
     text-align: center;
     font-weight: bold;
