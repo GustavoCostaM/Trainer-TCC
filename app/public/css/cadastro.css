@@ -164,3 +164,97 @@ footer h5{
   line-height: 1.5;
 }
 }
+
+@media only screen and (min-width:481px){
+  @import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@300;400;700família= Open+Sans:wght@300;400;700;800 & =swap');
+  @import url('https://fonts.googleapis.com/css2?family= Inter:wght@100;400;700;900 & display=swap');
+
+  body{
+    margin: auto;
+    max-width: 1024px;
+    background-color: #f9f9f9d1;
+  }
+
+  #logo{
+    width: 50%;
+    display: block;
+    margin: 1.5% auto 0;
+    }
+    
+  hr{
+    height: 2px;
+    background-color: #797979;
+    border: none;
+  }
+
+  main h3{
+    margin-top: 5%;
+    font-size: 175%;
+    margin: auto;
+  }
+
+  main form label{
+    font-size: 150%;
+    margin-bottom: 2%;
+    align-self: flex-start;  
+  }
+  
+  main form input{
+    font-size: 110%;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+    border-color: #f76c35;
+    border-radius: 6px;
+  }
+  main form legend{
+    margin-bottom: 5%;
+  }
+  
+  main form div{
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  #nomeRua{
+      display: flex;
+      width: 75%;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  
+  #numeroResidencial{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #numeroResidencial label{
+    margin-bottom: 7%;
+  }
+  
+  form p{
+    font-weight: 300;
+    margin-bottom: 5%;
+  }
+  
+  form p a{
+    font-weight: bold;
+    text-decoration: revert;
+    color: #333333;
+  }
+  
+  #cadastre-se{
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f76c35;
+    color: #ffffff;
+    width: 55%;
+    font-size: 120%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    align-self: center;
+  }
+}

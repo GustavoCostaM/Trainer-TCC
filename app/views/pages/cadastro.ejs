@@ -13,11 +13,11 @@
 		<%- include("../templates/header-logo.ejs") %>
 
 		<main>
-			<h3>INSIRA OS DADOS ABAIXO:</h3>
+			<h3>INSIRA OS DADOS ABAIXO</h3>
 
 			<form action="/cadastro" method="post">
                 <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
-
+                <section>
                 <label for="nome">NOME:</label>
 				<input type="text" placeholder="Insisa aqui..." name="nome" id="nome"
                 <%- data.input_values ? `value="${data.input_values.nome}"` : "" %>
@@ -34,6 +34,15 @@
                 /><br />
 
                 <%- data.errors && data.errors.nome_de_usuario_error ? `<span class='erro-mensagem'>${data.errors.nome_de_usuario_error.msg}</span>` : "" %>
+                <br />
+
+				<label for="telefone">TELEFONE:</label>
+				<input type="tel" placeholder="(00) 99999-9999" maxlength="15"  name="telefone" id="telefone" onkeyup="handlePhone(event)"
+                <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>
+                <%- data.errors && data.errors.telefone_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.telefone_error ? `<span class='erro-mensagem'>${data.errors.telefone_error.msg}</span>` : "" %>
                 <br />
 
 				<label for="email">E-MAIL:</label>
@@ -62,15 +71,7 @@
 
                 <%- data.errors && data.errors.confirmacao_senha_error ? `<span class='erro-mensagem'>${data.errors.confirmacao_senha_error.msg}</span>` : "" %>
                 <br />
-
-				<label for="telefone">TELEFONE:</label>
-				<input type="tel" placeholder="(00) 99999-9999" maxlength="15"  name="telefone" id="telefone" onkeyup="handlePhone(event)"
-                <%- data.input_values ? `value="${data.input_values.telefone}"` : "" %>
-                <%- data.errors && data.errors.telefone_error ? `class="erro"` : "" %>
-                /><br />
-
-                <%- data.errors && data.errors.telefone_error ? `<span class='erro-mensagem'>${data.errors.telefone_error.msg}</span>` : "" %>
-                <br />
+                </section>
 
 				<legend>ENDEREÇO</legend>
 
