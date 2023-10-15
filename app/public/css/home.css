@@ -725,18 +725,24 @@ footer hr{
 
   #cards{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;  
   }
 
   #cardPersonais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1.5% 2%;
     border-radius: 10px;
     border: solid 2px #f76c35;
-    width: 30%;
+    width: 38%;
     text-align: center;
     background-color: white;
   }
 
   #cardPersonais img{
+    margin: 0 auto;
     border-radius: 100%;
     border: solid 1px;
     width: 50%;
@@ -832,5 +838,18 @@ footer hr{
   
   #divSalvar input:checked ~ #salvo{
     opacity: 1;
+  }
+
+  #vejaMais{
+    text-decoration: none;
+  }
+  
+  #vejaMais h5{
+    color: #f76c35;
+    text-align: right;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-size: 200%;
+    margin-bottom: 10%;
+    font-weight: bold;
   }
 }  
