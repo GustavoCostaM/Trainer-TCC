@@ -723,6 +723,10 @@ footer hr{
     font-family: 'Open Sans', 'Inter', sans-serif;
   }
 
+  #cards{
+    display: flex;
+  }
+
   #cardPersonais{
     padding: 1.5% 2%;
     border-radius: 10px;
