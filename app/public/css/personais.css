@@ -432,7 +432,7 @@
     width: 80%;
     background-color: #f2f2f2;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     height: 50px;
     margin: 3% auto;
   
@@ -495,5 +495,163 @@
 
   h4 span{
     color:#f76c35;
+  }
+
+  #cardPersonais{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5% 2%;
+    border-radius: 10px;
+    border: solid 2px #f76c35;
+    width: 28%;
+    text-align: center;
+    background-color: white;
+  }
+
+  #cardPersonais img{
+    margin: 0 auto;
+    border-radius: 100%;
+    border: solid 1px;
+    width: 50%;
+    margin-bottom: 3%;
+  }
+
+  #cardPersonais h5{
+    margin-bottom: 1%;
+    font-size: 160%;
+  }
+
+  #cardPersonais #profissional{
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: bold;
+    color: #f76c35;
+    text-transform: uppercase;
+    font-size: 100%;
+    margin-bottom: 2%;
+  }
+
+  #cardPersonais h6{
+    margin-bottom: 8%;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-size: 110%;  
+  }
+
+  #cardPersonais p{
+    margin-bottom: 5%;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  #cardPersonais #contato{
+    margin-bottom: 5%;
+  }
+
+  #contatos{
+    margin-bottom: 3%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #contatos p{
+    font-size: 130%;
+    font-weight: bold;
+    margin: 0;
+    color: #f76c35;
+  }
+
+  #contatos i{
+    padding: 2px;
+    font-size: 175%;
+    color: #f76c35;
+  }
+
+  #verPerfil_Salvar{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #vPerfil{
+    text-transform: uppercase;
+    font-size: 95%;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+    background-color: #f76c35;
+    border: none;
+    width: 85%;
+    height: 35px;
+  }
+
+  #divSalvar{
+    justify-content: flex-end;
+    display: flex;
+    width: 15%;
+  }
+  #divSalvar i{
+    margin-right: -5px;
+    position: absolute;
+    color: #f76c35;
+    text-align: right;
+    font-size: 235%;
+    z-index: 1;
+  }
+  
+  #salvo{
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  #divSalvar input {
+    width: 20px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    }
+  
+  #divSalvar input:checked ~ #salvo{
+    opacity: 1;
+  }
+
+  footer{
+    width: 80%;
+    margin: 10% auto 50px auto;  
+    text-align: center;
+  }
+  #logoRodape{
+      width: 50%;
+  }
+  
+  footer hr{
+    height: 1.5px;
+    color: #555555;
+  }
+  
+  #icons{
+    margin: auto;
+    color: #f76c35;
+    font-size: 250%;
+    margin-bottom: 10px;
+  }
+  
+  footer h5{
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 175%;
+  }
+  
+  #links a{
+    font-size: 110%;
+    color: #555555;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    text-decoration: none;
+    line-height: 1.5;
   }
 }
