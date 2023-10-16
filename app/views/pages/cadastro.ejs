@@ -80,20 +80,19 @@
 				<input type="text" placeholder="Insisa aqui..." name="logradouro" id="logradouro"
                 <%- data.input_values ? `value="${data.input_values.logradouro}"` : "" %>
                 <%- data.errors && data.errors.logradouro_error ? `class="erro"` : "" %>
-                /><br />
+                />
 
                 <%- data.errors && data.errors.logradouro_error ? `<span class='erro-mensagem'>${data.errors.logradouro_error.msg}</span>` : "" %>
-                <br />
                     </div>
                     <div id="numeroResidencial">
 				<label for="numero_residencial">N°</label>
 				<input type="number" placeholder="000" name="numero_residencial" id="numero_residencial"
                 <%- data.input_values ? `value="${data.input_values.numero_residencial}"` : "" %>
                 <%- data.errors && data.errors.numero_residencial_error ? `class="erro"` : "" %>
-                /><br />
+                />
                 
                 <%- data.errors && data.errors.numero_residencial_error ? `<span class='erro-mensagem'>${data.errors.numero_residencial_error.msg}</span>` : "" %>
-                <br />
+                
                      </div>
                 </div>
 
