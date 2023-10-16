@@ -68,7 +68,15 @@
         margin-bottom: 5%;
     }
 
+    #salvos i{
+        font-size: 200%;
+        color: #f76c35;
+    }
+
     #salvos p{
+        color: #f76c35;
+        font-size: 150%;
+        font-weight: bold;
         margin: 0;
     }
 
