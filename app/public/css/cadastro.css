@@ -300,8 +300,9 @@ footer h5{
     color: #f76c35;
   }
   
-  #irLogin a{
-    font-size: 80%;
+  #irLogin {
+    text-align: center;
+    font-size: 150%;
     text-decoration: none;
     color: black;
   }
