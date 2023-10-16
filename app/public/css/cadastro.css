@@ -227,6 +227,7 @@ footer h5{
   }
   
   main form div{
+    width: 100%;
     align-items: center;
     margin-bottom: 2%;
     justify-content: space-between;
@@ -278,10 +279,10 @@ footer h5{
 
   #iconsEntrar{
     margin: auto;
-    width: 35%;
+    width: 30%;
     display: flex;
     color: #f76c35;
-    font-size: 200%;
+    font-size: 300%;
     justify-content: space-between;
     margin-bottom: 2%;
   }
@@ -295,11 +296,11 @@ footer h5{
     color: red;
   }
   
-  main a span{
+  #irLogin span{
     color: #f76c35;
   }
   
-  main a{
+  #irLogin a{
     font-size: 80%;
     text-decoration: none;
     color: black;
