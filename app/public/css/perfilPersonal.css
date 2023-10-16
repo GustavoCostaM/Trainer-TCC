@@ -57,7 +57,7 @@
 
     #dados p{
       font-size: 115%;
-      margin-bottom: 5%;
+      margin-bottom: 2%;
       font-weight: 300;
       line-height: 1.5;
       text-align: justify;
@@ -85,7 +85,8 @@
 
     #buttons{
         display: flex;
-        justify-content: space-between;    
+        justify-content: space-between;
+        margin-bottom: 10%;
     }
     
     #buttons button{
@@ -97,5 +98,9 @@
         border-radius: 6px;
         color: white;
         height: 40px;
+    }
+
+    h4{
+        text-transform: uppercase;
     }
 }
