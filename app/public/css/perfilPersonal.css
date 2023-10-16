@@ -66,6 +66,9 @@
     #salvos{
         display: flex;
         margin-bottom: 5%;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
     }
 
     #salvos i{
