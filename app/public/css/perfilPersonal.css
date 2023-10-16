@@ -22,7 +22,7 @@
     main{
         font-family: 'Open Sans', sans-serif;
         margin: auto;
-        width: 95%;
+        width: 90%;
         color: #333333;
     }
     
@@ -32,6 +32,7 @@
 
     #dados img{
         width: 35%;
+        margin-bottom: 5%;
     }
 
     #dados h5{
@@ -55,10 +56,27 @@
     }
 
     #dados p{
+      font-size: 115%;
       margin-bottom: 5%;
       font-weight: 300;
       line-height: 1.5;
       text-align: justify;
     }
+
+    #dados div div:first-child{
+        display: flex;
+        margin-bottom: 5%;
+    }
+
+    #buttons{
+        display: flex;
+    }
     
+    #buttons butoon {
+        border: none;
+        background-color: #f76c35;
+        border-radius: 6px;
+        color: white;
+        height: 30px;
+    }
 }
