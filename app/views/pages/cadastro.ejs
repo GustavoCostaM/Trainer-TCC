@@ -17,7 +17,7 @@
 
 			<form action="/cadastro" method="post">
                 <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
-                <section>
+
                 <label for="nome">NOME:</label>
 				<input type="text" placeholder="Insisa aqui..." name="nome" id="nome"
                 <%- data.input_values ? `value="${data.input_values.nome}"` : "" %>
@@ -71,7 +71,6 @@
 
                 <%- data.errors && data.errors.confirmacao_senha_error ? `<span class='erro-mensagem'>${data.errors.confirmacao_senha_error.msg}</span>` : "" %>
                 <br />
-                </section>
 
 				<legend>ENDEREÇO</legend>
 
