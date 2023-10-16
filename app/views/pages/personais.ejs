@@ -12,10 +12,6 @@
 		<%- include("../templates/header.ejs") %>
 
 <main>
-    <div id="busca">
-        <i class="bx bx-search-alt-2" style="color: #ffffff" id="lupa"></i>
-        <input type="text" placeholder="Busque um personal trainer..." id="pesquisa" />
-    </div>
 
     <h2>Personais Trainer</h2>
     
@@ -24,6 +20,7 @@
     <h4>Conheça seu novo personal <span>aqui!</span></h4>
 
     <div id="cards">
+    <a href="/perfilPersonal"></a>    
     <div id="personais">
         <img src="/imagens/silvio.svg" />
         <div id="dados">
@@ -38,6 +35,7 @@
         <i class="bx bxs-bookmark" id="salvo"></i>
         </div>
     </div>
+    </a>    
 
     <div id="cardPersonais">
         <img src="/imagens/silvio.svg" />
@@ -56,7 +54,7 @@
         </div>
 
         <div id="verPerfil_Salvar">
-        <button id="vPerfil">Visualizar Perfil</button>
+        <a href="/perfilPersonal"><button id="vPerfil">Visualizar Perfil</button></a>
         <div id="divSalvar"><input type="checkbox">
         <i class="bx bx-bookmark" id="salvar"></i>
         <i class="bx bxs-bookmark" id="salvo"></i>

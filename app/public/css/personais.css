@@ -158,36 +158,6 @@
           font-weight: bold;
           font-size: 110%;
         }
-      
-       #busca{
-          background-color: #f2f2f2;
-          border: none;
-          border-radius: 6px;
-          height: 30px;
-          margin: 10px 0;
-        
-        }
-      
-        #lupa{
-          background-color: #f76c35;
-          height: 100%;
-          width: 12%;
-          font-size: 200%;
-          float:left;
-          border-radius: 6px 0 0 6px;
-          text-align: center;
-        }
-      
-        #pesquisa{
-          background-color:transparent;
-          font-size:18px;
-          font-family: Arial, sans-serif;
-          border:none;
-          height: 100%;
-          width: 80%;
-          padding: 0 0 0 10px;
-          outline: none;
-        }
     
     main{
       margin: auto;

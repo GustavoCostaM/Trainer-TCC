@@ -5,6 +5,8 @@ const homeControllerRead = require("../controllers/homeController/homeController
 
 const personaisControllerRead = require("../controllers/personaisController/personaisControllerRead");
 
+const perfilPersonalControllerRead = require("../controllers/perfilPersonalController/perfilPersonalControllerRead");
+
 const politicasControllerRead = require("../controllers/politicasController/politicasControllerRead");
 
 const termosControllerRead = require("../controllers/termosController/termosControllerRead");
@@ -22,6 +24,8 @@ const validacaoFormulariosMiddleware = require("../middlewares/validacaoFormular
 router.get("/", homeControllerRead.viewPage);
 
 router.get("/personais", personaisControllerRead.viewPage);
+
+router.get("/perfilPersonal", perfilPersonalControllerRead.viewPage);
 
 router.get("/politicas", politicasControllerRead.viewPage);
 
