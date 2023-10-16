@@ -251,6 +251,7 @@ footer h5{
   }
   
   form p{
+    font-size: 120%;
     text-align: center;
     font-weight: 300;
     margin-bottom: 5%;
@@ -274,7 +275,7 @@ footer h5{
     letter-spacing: 0.5px;
     align-self: center;
   }
-  
+
   #iconsEntrar{
     margin: auto;
     width: 35%;
@@ -306,7 +307,7 @@ footer h5{
   
   footer{
     width: 80%;
-    margin: 10% auto 5% auto;  
+    margin: 10% auto 50px auto;  
     text-align: center;
   }
   #logoRodape{
@@ -322,19 +323,18 @@ footer h5{
     margin: auto;
     color: #f76c35;
     font-size: 250%;
-    justify-content: space-between;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
   }
   
   footer h5{
     font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight: bold;
-    margin-bottom: 5%;
-    font-size: 115%;
+    margin-bottom: 10px;
+    font-size: 175%;
   }
   
   #links a{
-    font-size: 90%;
+    font-size: 110%;
     color: #555555;
     font-family: 'Open Sans', 'Inter', sans-serif;
     text-decoration: none;
