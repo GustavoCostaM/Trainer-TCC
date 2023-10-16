@@ -57,18 +57,16 @@
 
     #dados p{
       font-size: 115%;
-      margin-bottom: 2%;
+      margin-bottom: 5%;
       font-weight: 300;
       line-height: 1.5;
       text-align: justify;
     }
 
     #salvos{
-        display: flex;
-        margin-bottom: 5%;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: flex-start;
+      position: absolute;
+      display: flex;
+      margin: 7% auto;
     }
 
     #salvos i{
@@ -100,7 +98,38 @@
         height: 40px;
     }
 
-    h4{
-        text-transform: uppercase;
+    main h4{
+        text-transform:uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: 150%;
+    }
+
+    main h4 span{
+      color: #f76c35;
+    }
+
+    #atividades{
+      display: flex;
+      margin-bottom: 5%;
+      background-color: #ffffff;
+      border-radius: 10px 10px 10px 10px;
+      box-shadow: 2px 3px 13px -5px;
+    }
+    
+    #atividades div {
+      width: 20%;
+      padding: 4%;
+      background-color: #f76c35;
+      float:left;
+      border-radius: 10px 0 0 10px;
+      text-align: center;
+    }
+
+    #atividades h6{
+      font-size: 115%;
+      color: white;
+      font-weight: bold;
+      text-align: center;
     }
 }
