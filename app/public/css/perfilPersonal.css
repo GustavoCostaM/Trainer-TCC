@@ -63,16 +63,20 @@
       text-align: justify;
     }
 
-    #dados #salvos{
+    #salvos{
         display: flex;
         margin-bottom: 5%;
+    }
+
+    #salvos p{
+        margin: 0;
     }
 
     #buttons{
         display: flex;
     }
     
-    #buttons butoon {
+    #buttons button{
         border: none;
         background-color: #f76c35;
         border-radius: 6px;
