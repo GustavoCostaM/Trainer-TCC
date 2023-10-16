@@ -63,7 +63,7 @@
       text-align: justify;
     }
 
-    #dados div div:first-child{
+    #dados #salvos{
         display: flex;
         margin-bottom: 5%;
     }
