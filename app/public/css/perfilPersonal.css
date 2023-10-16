@@ -6,10 +6,6 @@
         background-color: #f9f9f9d1;
       }
 
-    header hr:last-child, #bCadastro, #cardPersonais{
-      display: none;  
-    }
-
     #logo{
         width: 60%;
         display: block;
