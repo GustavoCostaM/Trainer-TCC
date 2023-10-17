@@ -146,4 +146,41 @@
     width: 30%;
     height: 50px;
     }
+
+    footer{
+      width: 80%;
+      margin: 10% auto 5% auto;  
+      text-align: center;
+    }
+    #logoRodape{
+        width: 50%;
+    }
+    
+    footer hr{
+      height: 1.5px;
+      color: #555555;
+    }
+    
+    #icons{
+      margin: auto;
+      color: #f76c35;
+      font-size: 250%;
+      justify-content: space-between;
+      margin-bottom: 5%;
+    }
+    
+    footer h5{
+      font-family: 'Open Sans', 'Inter', sans-serif;
+      font-weight: bold;
+      margin-bottom: 5%;
+      font-size: 115%;
+    }
+    
+    #links a{
+      font-size: 90%;
+      color: #555555;
+      font-family: 'Open Sans', 'Inter', sans-serif;
+      text-decoration: none;
+      line-height: 1.5;
+    }
 }
