@@ -65,6 +65,7 @@
     #salvos{
       position: absolute;
       display: flex;
+      align-items: center;
     }
 
     #salvos i{
