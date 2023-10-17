@@ -1,4 +1,4 @@
-const prisma = require("../server/database/prismaClient");
+const prisma = require("../../server/database/prismaClient");
 
 class Usuario {
     async createUsuario(data) {
