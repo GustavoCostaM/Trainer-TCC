@@ -6,7 +6,7 @@
         background-color: #f9f9f9d1;
       }
 
-    header hr:last-child, #bCadastro, #cardPersonais #cards a{
+    header hr:last-child, #bCadastro, #cardPersonais{
       display: none;  
     }
 
@@ -316,7 +316,7 @@
   }
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
-  #cabeçalho hr, #personais{
+  #cabeçalho hr, #personais, #cards a{
     display: none;
   }
 
