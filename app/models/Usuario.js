@@ -21,11 +21,11 @@ class Usuario {
         return user;
     }
 
-    async createUser(data) {
+    /*async createUser(data) {
         await prisma.usuario.create({
             data
         })
-    }
+    }*/
 
     async updateUserPassword(userEmail, userNewPassword) {
         await prisma.usuario.update({
