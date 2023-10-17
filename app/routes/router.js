@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
+const jwt = require("jsonwebtoken");
+
+
 const homeControllerRead = require("../controllers/homeController/homeControllerRead");
 
 const personaisControllerRead = require("../controllers/personaisController/personaisControllerRead");
