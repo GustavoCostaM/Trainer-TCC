@@ -316,7 +316,7 @@
   }
 
   #menuToggle span, #menuToggle input, #menuToggle hr, #institucional, 
-  #cabeçalho hr, #personais, #cards a{
+  #cabeçalho hr, #personais{
     display: none;
   }
 
