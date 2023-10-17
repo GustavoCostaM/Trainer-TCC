@@ -68,7 +68,7 @@ validacaoRegrasMiddleware.editarPerfilValidationRules,
 validacaoFormulariosMiddleware.editarPerfilValidation,
 editarPerfilControllerUpdate.editUser);
 
-router.get("/perfil-user",
+router.get("/perfil",
 autenticacaoMiddleware.validateJWT,
 homePerfilControllerRead.getPage);
 
