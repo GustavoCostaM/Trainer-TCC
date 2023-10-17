@@ -20,6 +20,8 @@ model Usuario {
     cidade             String @db.VarChar(130)
     estado             String @db.VarChar(130)
     cep                String @db.VarChar(9)
+
+    tokens Token[]
 }
 
 model Token {
