@@ -1,8 +1,8 @@
 class CadastroController {
-    viewPage(req, res) {
+    getPage(req, res) {
         return res.render("pages/cadastro.ejs", {
             data: {
-                page: "Cadastro"
+                page_name: "Cadastro"
             }
         })
     }

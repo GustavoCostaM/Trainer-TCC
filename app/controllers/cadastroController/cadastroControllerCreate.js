@@ -19,7 +19,7 @@ class CadastroController {
             estado,
             cep
         } = req.body;
-        const senhaCriptografada = req.senhaEncriptada;
+        const senhaCriptografada = req.encryptedPassword;
 
         try {
             await usuarioModel.createUser({
