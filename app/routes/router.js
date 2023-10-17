@@ -52,7 +52,7 @@ router.post("/cadastro",
 validacaoRegrasMiddleware.cadastroValidationRules,
 validacaoFormulariosMiddleware.validacaoCadastro,
 autenticacaoMiddleware.encriptarSenha,
-cadastroControllerCreate.criarUsuario);
+cadastroControllerCreate.createUser);
 
 router.get("/logout",
 autenticacaoMiddleware.validateJWT,
