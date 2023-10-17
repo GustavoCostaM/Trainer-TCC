@@ -134,6 +134,10 @@
       font-weight: bold;
       text-align: center;
     }
+
+    #atividades h6:last-child{
+      font-size: 175%;
+    }
     
     #atividades button a{
       text-decoration: none;
