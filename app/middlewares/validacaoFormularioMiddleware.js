@@ -7,6 +7,7 @@ class ValidacaoFormularios {
     constructor() {
         this.validacaoCadastro = this.validacaoCadastro.bind(this);
         this.validacaoLogin = this.validacaoLogin.bind(this);
+		this.editarPerfilValidation = this.editarPerfilValidation.bind(this);
     }
 
     validacaoCadastro(req, res, next) {
@@ -68,6 +69,58 @@ class ValidacaoFormularios {
 						telefone_error,
 						senha_error,
 						confirmacao_senha_error,
+                        logradouro_error,
+                        numero_residencial_error,
+                        bairro_error,
+                        cidade_error,
+                        estado_error,
+                        cep_error
+					},
+				},
+			});
+		}
+
+		return next();
+	}
+
+	editarPerfilValidation(req, res, next) {
+		const errors = validationResult(req);
+
+		if (!errors.isEmpty()) {
+			const {nome, nome_de_usuario, email, telefone, logradouro, numero_residencial, bairro, 
+				cidade, estado, cep } = req.body;
+
+			const nome_error = errors.errors.find((error) => error.path === "nome");
+            const nome_de_usuario_error = errors.errors.find((error) => error.path === "nome_de_usuario");
+			const email_error = errors.errors.find((error) => error.path === "email");
+			const telefone_error = errors.errors.find((error) => error.path === "telefone");
+            const logradouro_error = errors.errors.find((error) => error.path === "logradouro");
+            const numero_residencial_error = errors.errors.find((error) => error.path === "numero_residencial");
+            const bairro_error = errors.errors.find((error) => error.path === "bairro");
+            const cidade_error = errors.errors.find((error) => error.path === "cidade");
+            const estado_error = errors.errors.find((error) => error.path === "estado");
+            const cep_error = errors.errors.find((error) => error.path === "cep");
+
+			return res.render("pages/editar-perfil.ejs", {
+				data: {
+					page_name: "Editar perfil",
+					input_values: {
+						nome,
+                        nome_de_usuario,
+                        email,
+                        telefone,
+                        logradouro,
+                        numero_residencial,
+                        bairro,
+                        cidade,
+                        estado,
+                        cep
+					},
+					errors: {
+						nome_error,
+                        nome_de_usuario_error,
+						email_error,
+						telefone_error,
                         logradouro_error,
                         numero_residencial_error,
                         bairro_error,

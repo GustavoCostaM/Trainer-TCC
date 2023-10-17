@@ -21,6 +21,14 @@ const autenticacaoMiddleware = require("../middlewares/autenticarMiddleware");
 const validacaoRegrasMiddleware = require("../middlewares/validacaoRegrasMiddleware");
 const validacaoFormulariosMiddleware = require("../middlewares/validacaoFormularioMiddleware");
 
+const logoutControllerRead = require("../controllers/perfilControllers/logoutControllerRead");
+
+const editarPerfilControllerRead = require("../controllers/perfilControllers/editarPerfilControllerRead");
+const editarPerfilControllerUpdate = require("../controllers/perfilControllers/editarPerfilControllerUpdate");
+
+const homePerfilControllerRead = require("../controllers/homePerfilController/homePerfilControllerRead");
+
+
 router.get("/", homeControllerRead.viewPage);
 
 router.get("/personais", personaisControllerRead.viewPage);
@@ -42,5 +50,24 @@ validacaoRegrasMiddleware.cadastroValidationRules,
 validacaoFormulariosMiddleware.validacaoCadastro,
 autenticacaoMiddleware.encriptarSenha,
 cadastroControllerCreate.criarUsuario);
+
+router.get("/logout",
+autenticacaoMiddleware.validateJWT,
+logoutControllerRead.logout);
+
+router.get("/editar-perfil",
+autenticacaoMiddleware.validateJWT,
+editarPerfilControllerRead.getPage);
+
+router.post("/editar-perfil",
+autenticacaoMiddleware.validateJWT,
+validacaoRegrasMiddleware.editarPerfilValidationRules,
+validacaoFormulariosMiddleware.editarPerfilValidation,
+editarPerfilControllerUpdate.editUser);
+
+router.get("/perfil",
+autenticacaoMiddleware.validateJWT,
+homePerfilControllerRead.getPage);
+
 
 module.exports = router;
