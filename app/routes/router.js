@@ -47,7 +47,7 @@ router.post("/login",
 validacaoFormulariosMiddleware.validacaoLogin,
 loginControllerAuth.autorizarUsuario);
 
-router.get("/cadastro", cadastroControllerRead.viewPage);
+router.get("/cadastro", cadastroControllerRead.getPage);
 router.post("/cadastro",
 validacaoRegrasMiddleware.cadastroValidationRules,
 validacaoFormulariosMiddleware.validacaoCadastro,

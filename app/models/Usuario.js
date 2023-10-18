@@ -1,61 +1,55 @@
 const prisma = require("../../server/database/prismaClient");
 
 class Usuario {
-    async createUsuario(data) {
+    async findUserById(userId) {
+        const user = await prisma.usuario.findUnique({
+            where: {
+                id: userId
+            }
+        });
+
+        return user;
+    }
+
+    async findUserByEmail(userEmail) {
+        const user = await prisma.usuario.findUnique({
+            where: {
+                email: userEmail
+            }
+        })
+
+        return user;
+    }
+
+    async createUser(data) {
         await prisma.usuario.create({
             data
-        });
-    }
-
-    async findUserById(usuarioId) {
-        return await prisma.usuario.findUnique({
-            where: {
-                id: usuarioId
-            },
         })
     }
 
-    async findUserByEmail(usuarioEmail) {
-        return await prisma.usuario.findUnique({
-            where: {
-                email: usuarioEmail
-            }
-        })
-    }
-
-    async findAllUsers(userId) {
-        return await prisma.usuario.findMany({
-            where: {
-                NOT: {
-                    id: userId
-                }
-            }
-        });
-    }
-
-    async updateUserSenha(novaSenha, email) {
+    async updateUserPassword(userEmail, userNewPassword) {
         await prisma.usuario.update({
             where: {
-                email: email
+                email: userEmail
             },
             data: {
-                senha: novaSenha
+                senha: userNewPassword
             }
-        })
+        });
     }
 
     async updateUserCustomerId(userId, customerId) {
-        return await prisma.usuario.update({
+        await prisma.usuario.update({
             where: {
                 id: userId
             },
             data: {
-                customer_id: customerId        
+                customer_id: customerId
             }
         })
     }
 
-    async updateUser(data, userId) {
+    async updatePerfil(data, userId){
         await prisma.usuario.update({
             where: {
                 id: userId
@@ -63,7 +57,6 @@ class Usuario {
             data
         })
     }
-
 
 }
 
