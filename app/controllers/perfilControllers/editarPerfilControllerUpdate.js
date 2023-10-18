@@ -27,7 +27,7 @@ class EditarPerfilController {
             estado,
             cep
 		}, userId);
-		return res.redirect("/perfil");
+		return res.redirect("/perfil-user");
 		} catch (erro) {
 			console.log(erro);
 
