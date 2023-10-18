@@ -1,55 +1,61 @@
 const prisma = require("../../server/database/prismaClient");
 
 class Usuario {
-    async findUserById(userId) {
-        const user = await prisma.usuario.findUnique({
-            where: {
-                id: userId
-            }
-        });
-
-        return user;
-    }
-
-    async findUserByEmail(userEmail) {
-        const user = await prisma.usuario.findUnique({
-            where: {
-                email: userEmail
-            }
-        })
-
-        return user;
-    }
-
-    async createUser(data) {
+    async createUsuario(data) {
         await prisma.usuario.create({
             data
+        });
+    }
+
+    async findUserById(usuarioId) {
+        return await prisma.usuario.findUnique({
+            where: {
+                id: usuarioId
+            },
         })
     }
 
-    async updateUserPassword(userEmail, userNewPassword) {
-        await prisma.usuario.update({
+    async findUserByEmail(usuarioEmail) {
+        return await prisma.usuario.findUnique({
             where: {
-                email: userEmail
-            },
-            data: {
-                senha: userNewPassword
+                email: usuarioEmail
+            }
+        })
+    }
+
+    async findAllUsers(userId) {
+        return await prisma.usuario.findMany({
+            where: {
+                NOT: {
+                    id: userId
+                }
             }
         });
+    }
+
+    async updateUserSenha(novaSenha, email) {
+        await prisma.usuario.update({
+            where: {
+                email: email
+            },
+            data: {
+                senha: novaSenha
+            }
+        })
     }
 
     async updateUserCustomerId(userId, customerId) {
-        await prisma.usuario.update({
+        return await prisma.usuario.update({
             where: {
                 id: userId
             },
             data: {
-                customer_id: customerId
+                customer_id: customerId        
             }
         })
     }
 
-    async updatePerfil(data, userId){
+    async updateUser(data, userId) {
         await prisma.usuario.update({
             where: {
                 id: userId
@@ -58,6 +64,16 @@ class Usuario {
         })
     }
 
+    async addUserPremiumByCustomerId(customerId) {
+        await prisma.usuario.update({
+            where: {
+                customer_id: customerId
+            },
+            data: {
+                
+            }
+        })
+    }
 }
 
 const usuarioModel = new Usuario();
