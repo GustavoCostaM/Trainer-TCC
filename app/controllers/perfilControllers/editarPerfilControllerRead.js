@@ -14,7 +14,7 @@ class EditarPerfilController {
         data: {
           page_name: "Trainer",
           input_values: {
-            nome: user.name,
+            nome: user.nome,
             nome_de_usuario: user.nome_de_usuario,
             email: user.email,
             telefone: user.telefone,
