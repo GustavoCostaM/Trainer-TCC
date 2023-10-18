@@ -33,7 +33,7 @@
         font-weight: bold;
         text-transform: uppercase;
     }
-    
+
     .tabs{
         display: flex;
         justify-content: space-between;
@@ -69,12 +69,61 @@
         background-color: #f76c35;
     }
 
-
-
-
-
-
-
+    #personais{
+        font-family: 'Open Sans', 'Inter', sans-serif;
+        display: flex;
+        margin-bottom: 5%;
+        background-color: #ffffff;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 2px 3px 13px -5px;
+      }
+      
+      #personais img{
+        padding: 4%;
+        background-color: #f76c35;
+        float:left;
+        border-radius: 10px 0 0 10px;
+        text-align: center;
+      }
+      
+      #personais #dados{
+        width: 95%;
+        margin: 5% 0 0 2%;
+        text-align: left ;
+      }
+      
+      #personais #dados h5{
+        text-transform: uppercase;
+        margin-bottom: 3%;
+        font-size: 130%;
+        text-align: left ;
+        font-weight: bold;
+      }
+      
+      #personais #dados p{
+        margin-bottom: 2%;
+        color: #555555;
+        font-size: 100%;
+        text-align: left ;
+      }
+      
+      #divSalvar{
+        margin: 5% 4% 0 0;
+        width: 5%;
+      }
+      
+      #personais i{
+        position: absolute;
+        color: #f76c35;
+        text-align: right;
+        font-size: 130%;
+        z-index: 1;
+      }
+      
+      #salvo{
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
 
     #atividades{
         display: none;
@@ -89,5 +138,9 @@
     #t-atividades.active{
         color: white;
         background-color: #f76c35;
+    }
+
+    #atividades img{
+        margin-bottom: 10%;
     }
 }
