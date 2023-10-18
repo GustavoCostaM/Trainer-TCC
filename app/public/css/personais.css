@@ -182,6 +182,7 @@
     }
 
     main a{
+      display: contents;
       color: #333333;
       text-decoration: none;
     }

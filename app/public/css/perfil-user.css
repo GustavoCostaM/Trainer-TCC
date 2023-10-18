@@ -193,13 +193,14 @@
     }
 
     #agenda img{
+        width: 100%;
         margin-bottom: 5%;
     }
-    
+
     #agenda p{
         margin-bottom: 2%;
         color: #555555;
-        font-size: 100%;
+        font-size: 110%;
         text-align: left ;
     }
 
