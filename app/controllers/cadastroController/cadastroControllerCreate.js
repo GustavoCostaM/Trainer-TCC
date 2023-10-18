@@ -1,10 +1,7 @@
 const prisma = require("../../../server/database/prismaClient");
 
 class CadastroController {
-    constructor() {
-		this.createUser = this.createUser.bind(this);
-	}
-    async createUser(req, res) {
+    async criarUsuario(req, res) {
         const {
             nome,
             nome_de_usuario,
@@ -22,7 +19,7 @@ class CadastroController {
         const senhaCriptografada = req.senhaEncriptada;
 
         try {
-            await usuarioModel.createUser({
+            await prisma.usuario.create({
                 data: {
                     nome,
                     nome_de_usuario,
