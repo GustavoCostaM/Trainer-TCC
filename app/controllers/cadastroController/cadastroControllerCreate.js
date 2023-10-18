@@ -1,4 +1,4 @@
-const usuarioModel = require("../../../models/Usuario");
+const prisma = require("../../../server/database/prismaClient");
 
 class CadastroController {
     constructor() {
