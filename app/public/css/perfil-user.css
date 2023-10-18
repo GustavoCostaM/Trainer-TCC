@@ -33,10 +33,13 @@
     }
     
     #t-personais, #t-atividades{
+        padding-top: 3%;
+        border: solid #f76c35;
+        height: 30px;
         text-decoration: none;
         color:#333333;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 100%;
         cursor: pointer;
     }
 
@@ -49,7 +52,8 @@
     }
     
     #t-personais.active{
-        color: #ff5b00;
+        color: white;
+        background-color: #f76c35;
     }
 
 
@@ -70,6 +74,7 @@
     }
     
     #t-atividades.active{
-        color: #ff5b00;
+        color: white;
+        background-color: #f76c35;
     }
 }
