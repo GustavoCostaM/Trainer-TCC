@@ -13,10 +13,7 @@
   <body>
     <%- include('../templates/header-logo.ejs') %>
 
-    <main>
-        <h2 class="titulo-perfil" id="logado">Olá <%- data.usuario.nome %>, seja <span>bem vindo!</span></h2>
-        <h3 class="local"><%- data.usuario.cidade %> - <%- data.usuario.estado %></h3>
-
+    <main>      
       <div class="funcoes-perfil">
         <a href="/editar-perfil" class="edit-perfil">
           <i class='bx bxs-edit'></i><p>Editar Perfil</p>
@@ -27,6 +24,8 @@
         </a>
       </div>
 
+        <h2 class="titulo-perfil" id="logado">Olá <%- data.usuario.nome %>, seja <span>bem vindo!</span></h2>
+        <h3 class="local"><%- data.usuario.cidade %> - <%- data.usuario.estado %></h3>
 
       <div class="container">
         <div class="tabs">
