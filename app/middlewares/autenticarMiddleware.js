@@ -20,9 +20,9 @@ class Autenticacao {
         const salt = Number(process.env.SALT);
 
         try {
-            const hash = await bcrypt.hash(senha, salt);
+            const senhaEncriptada = await bcrypt.hash(senha, salt);
 
-            req.senhaEncriptada = hash;
+            req.senhaEncriptada = senhaEncriptada;
 
             return next();
         } catch (erro) {
