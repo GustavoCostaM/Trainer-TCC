@@ -34,6 +34,14 @@
         text-transform: uppercase;
     }
 
+    .pic-perfil span{
+        color: #f76c35;
+    }
+
+    .pic-perfil h2{
+        text-align: center;
+    }
+
     .tabs{
         display: flex;
         justify-content: space-between;
@@ -119,11 +127,6 @@
         font-size: 130%;
         z-index: 1;
       }
-      
-      #salvo{
-        opacity: 0;
-        transition: opacity 0.2s ease;
-      }
 
     #atividades{
         display: none;
@@ -142,5 +145,12 @@
 
     #atividades img{
         margin-bottom: 10%;
+    }
+
+    #atividades p{
+        margin-bottom: 2%;
+        color: #555555;
+        font-size: 100%;
+        text-align: left ;
     }
 }
