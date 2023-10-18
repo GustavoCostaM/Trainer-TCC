@@ -64,16 +64,7 @@ class Usuario {
         })
     }
 
-    async addUserPremiumByCustomerId(customerId) {
-        await prisma.usuario.update({
-            where: {
-                customer_id: customerId
-            },
-            data: {
-                
-            }
-        })
-    }
+
 }
 
 const usuarioModel = new Usuario();

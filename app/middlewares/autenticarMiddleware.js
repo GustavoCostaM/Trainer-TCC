@@ -17,12 +17,12 @@ class Autenticacao {
             estado,
             cep
         } = req.body;
-        const salt = Number(process.env.SALT);
+        const salt = Number(process.env.SALT_ROUNDS);
 
         try {
-            const senhaEncriptada = await bcrypt.hash(senha, salt);
+            const hash = await bcrypt.hash(senha, salt);
 
-            req.senhaEncriptada = senhaEncriptada;
+            req.senhaEncriptada = hash;
 
             return next();
         } catch (erro) {

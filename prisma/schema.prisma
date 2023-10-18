@@ -8,7 +8,8 @@ datasource db {
 }
 
 model Usuario {
-    id                 Int    @id @default(autoincrement())
+    id                 String @id @default(uuid())
+    customer_id        String? @unique
     nome               String @db.VarChar(130)
     nome_de_usuario    String @db.VarChar(130)
     email              String @unique @db.VarChar(130)
@@ -20,12 +21,14 @@ model Usuario {
     cidade             String @db.VarChar(130)
     estado             String @db.VarChar(130)
     cep                String @db.VarChar(9)
+
+     tokens Token []
 }
 
 model Token {
     id         String   @id @default(uuid())
-    user_email String   @db.VarChar(120)
+    email      String
     created_at DateTime @default(now())
 
-    email Usuario @relation(fields: [user_email], references: [email], onDelete: Cascade, onUpdate: Cascade)
+    usuario Usuario @relation(fields: [email], references: [email])
 }
