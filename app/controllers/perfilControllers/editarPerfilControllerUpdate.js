@@ -2,6 +2,10 @@ const usuarioModel = require("../../models/Usuario");
 const jwt = require("jsonwebtoken");
 
 class EditarPerfilController {	
+  constructor() {
+		this.editUser = this.editUser.bind(this);
+	}
+
     async editUser(req, res) {
     const token = req.session.token;
     const {userId} = jwt.decode(token, process.env.SECRET);
