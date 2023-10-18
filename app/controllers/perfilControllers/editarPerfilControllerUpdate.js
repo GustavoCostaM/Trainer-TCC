@@ -21,7 +21,7 @@ class EditarPerfilController {
             email,
             telefone,
             logradouro,
-            numero_residencial,
+            numero_residencial: Number(numero_residencial),
             bairro,
             cidade,
             estado,
