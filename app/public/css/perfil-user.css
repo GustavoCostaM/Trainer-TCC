@@ -27,15 +27,28 @@
     }
 
 
+    h4{
+        margin-bottom: 10%;
+        font-size: 150%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
     .tabs{
         display: flex;
         justify-content: space-between;
     }
+
+    .tab-content{
+        text-align: center;
+        margin-top: 10%;
+    }
     
     #t-personais, #t-atividades{
-        padding-top: 3%;
+        border-radius: 6px;
+        padding: 3% 3% 0;        
         border: solid #f76c35;
-        height: 30px;
+        height: 25px;
         text-decoration: none;
         color:#333333;
         font-weight: bold;
