@@ -1,0 +1,346 @@
+@media only screen and (max-width: 480px) {
+    @import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@300;400;700família= Open+Sans:wght@300;400;700;800 & =swap');
+    @import url('https://fonts.googleapis.com/css2?family= Inter:wght@100;400;700;900 & display=swap');
+  
+  body{
+    background-color: #f9f9f9d1;
+  }
+  #logo{
+  width: 60%;
+  display: block;
+  margin: 1.5% auto 0;
+  }
+  
+  hr{
+    height: 2px;
+    background-color: #797979;
+    border: none;
+  }
+  
+  main{
+    color: #333333;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: bold;
+  }
+  
+  main form{
+    width: 75%;
+    margin: 5% auto 2% auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main form label{
+    font-size: 80%;
+    margin-bottom: 2%;
+    align-self: flex-start;  
+  }
+  
+  main form input{
+    font-size: 110%;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+    border-color: #f76c35;
+    border-radius: 6px;
+  }
+  main form legend{
+    margin-bottom: 5%;
+  }
+  
+  main form div{
+    margin-bottom: 4%;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  #nomeRua{
+      display: flex;
+      width: 75%;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  
+  #numeroResidencial{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #numeroResidencial label{
+    margin-bottom: 7%;
+  }
+  
+  form p{
+    font-weight: 300;
+    margin-bottom: 5%;
+  }
+  
+  form p a{
+    font-weight: bold;
+    text-decoration: revert;
+    color: #333333;
+  }
+  
+  #cadastre-se{
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f76c35;
+    color: #ffffff;
+    width: 55%;
+    font-size: 120%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    align-self: center;
+  }
+  
+  #iconsEntrar{
+    margin: auto;
+    width: 35%;
+    display: flex;
+    color: #f76c35;
+    font-size: 200%;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+  
+  main form input.erro {
+    border-color: red;
+  }
+  
+  main form span.erro-mensagem {
+    font-size: 80%;
+    color: red;
+  }
+  
+  main a span{
+    color: #f76c35;
+  }
+  
+  main a{
+    font-size: 80%;
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  footer{
+    width: 80%;
+    margin: 10% auto 5% auto;  
+    text-align: center;
+  }
+  #logoRodape{
+      width: 50%;
+  }
+  
+  footer hr{
+    height: 1.5px;
+    color: #555555;
+  }
+  
+  #icons{
+    margin: auto;
+    color: #f76c35;
+    font-size: 250%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  
+  footer h5{
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    font-weight: bold;
+    margin-bottom: 5%;
+    font-size: 115%;
+  }
+  
+  #links a{
+    font-size: 90%;
+    color: #555555;
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+  }
+  
+  @media only screen and (min-width:481px){
+    @import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@300;400;700família= Open+Sans:wght@300;400;700;800 & =swap');
+    @import url('https://fonts.googleapis.com/css2?family= Inter:wght@100;400;700;900 & display=swap');
+  
+    body{
+      font-family: 'Open Sans', 'Inter', sans-serif;
+      margin: auto;
+      max-width: 1024px;
+      background-color: #f9f9f9d1;
+    }
+  
+    #logo{
+      width: 50%;
+      display: block;
+      margin: 1.5% auto 0;
+      }
+      
+    hr{
+      height: 2px;
+      background-color: #797979;
+      border: none;
+    }
+  
+    main h3{
+      font-weight: bold;
+      text-align: center;
+      margin-top: 5%;
+      font-size: 175%;
+    }
+  
+    main form{
+      width: 75%;
+      margin: 5% auto 2% auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center
+    }
+  
+    main form label{
+      font-size: 120%;
+      margin-bottom: 2%;
+      align-self: flex-start;  
+    }
+    
+    main form input{
+      font-size: 130%;
+      height: 50px;
+      border-width: 1px;
+      border-style: solid;
+      width: 100%;
+      border-color: #f76c35;
+      border-radius: 10px;
+    }
+  
+    main form legend{
+      text-align: center;
+      font-weight: bold;
+      font-size: 175%;
+      margin-bottom: 3%;
+    }
+    
+    main form div{
+      width: 100%;
+      align-items: center;
+      margin-bottom: 2%;
+      justify-content: space-between;
+      display: flex;
+    }
+    
+    #nomeRua{
+        display: flex;
+        width: 75%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #numeroResidencial{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #numeroResidencial label{
+      margin-bottom: 7%;
+    }
+    
+    form p{
+      font-size: 120%;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 5%;
+    }
+    
+    form p a{
+      font-weight: bold;
+      text-decoration: revert;
+      color: #333333;
+    }
+    
+    #cadastre-se{
+      height: 50px;
+      border: none;
+      border-radius: 10px;
+      background-color: #f76c35;
+      color: #ffffff;
+      width: 100%;
+      font-size: 150%;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      align-self: center;
+    }
+  
+    #iconsEntrar{
+      margin: auto;
+      width: 30%;
+      display: flex;
+      color: #f76c35;
+      font-size: 300%;
+      justify-content: space-between;
+      margin-bottom: 2%;
+    }
+    
+    main form input.erro {
+      border-color: red;
+    }
+    
+    main form span.erro-mensagem {
+      font-size: 110%;
+      color: red;
+    }
+    
+    #irLogin span{
+      color: #f76c35;
+    }
+    
+    #irLogin {
+      text-align: center;
+      font-size: 150%;
+      text-decoration: none;
+      color: black;
+    }
+    
+    footer{
+      width: 80%;
+      margin: 10% auto 50px auto;  
+      text-align: center;
+    }
+    #logoRodape{
+        width: 50%;
+    }
+    
+    footer hr{
+      height: 1.5px;
+      color: #555555;
+    }
+    
+    #icons{
+      margin: auto;
+      color: #f76c35;
+      font-size: 250%;
+      margin-bottom: 10px;
+    }
+    
+    footer h5{
+      font-family: 'Open Sans', 'Inter', sans-serif;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 175%;
+    }
+    
+    #links a{
+      font-size: 110%;
+      color: #555555;
+      font-family: 'Open Sans', 'Inter', sans-serif;
+      text-decoration: none;
+      line-height: 1.5;
+    }
+  }
