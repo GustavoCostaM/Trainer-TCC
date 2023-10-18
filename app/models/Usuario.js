@@ -27,16 +27,6 @@ class Usuario {
         })
     }
 
-    async updateUserPassword(userEmail, userNewPassword) {
-        await prisma.usuario.update({
-            where: {
-                email: userEmail
-            },
-            data: {
-                senha: userNewPassword
-            }
-        });
-    }
 
     async updateUserCustomerId(userId, customerId) {
         await prisma.usuario.update({
@@ -52,6 +42,15 @@ class Usuario {
     async updatePerfil(data, userId){
         await prisma.usuario.update({
             where: {
+                id: userId
+            },
+            data
+        })
+    }
+
+    async deleteUsuario(data, userId){
+        await prisma.usuario.delete({
+            where:{
                 id: userId
             },
             data
