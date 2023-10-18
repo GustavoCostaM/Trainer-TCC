@@ -55,7 +55,7 @@ class Autenticacao {
         }
     }
 
-    validateJWT(req, res, next) {
+    /* validateJWT(req, res, next) {
         const token = req.session.token;
         req.session.loginRedirectUrl = req.url;
 
@@ -72,7 +72,7 @@ class Autenticacao {
 
             return res.redirect("/login");
         }
-    }
+    }*/
 }
 
 const AutenticacaoMiddleware = new Autenticacao();
