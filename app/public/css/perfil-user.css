@@ -53,9 +53,34 @@
 
     .funcoes-perfil{
         display: flex;
+        margin-bottom: 5%;
     }
 
+    .funcoes-perfil a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
 
+    .edit-perfil i{
+        font-size: 110%;
+        color: #f76c35;
+    }
+
+    .edit-perfil p{
+        font-size: 125%;
+        color: #f76c35;
+    }
+
+    .delete-perfil i{
+        font-size: 110%;
+        color: #333333;
+    }
+
+    .delete-perfil p{
+        font-size: 125%;
+        color: #333333;
+    }
 
     .tabs{
         display: flex;
