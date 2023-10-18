@@ -188,15 +188,23 @@
         background-color: #f76c35;
     }
 
-    #atividades img{
+    #agenda{
         margin-bottom: 10%;
     }
 
-    #atividades p{
+    #agenda img{
+        margin-bottom: 5%;
+    }
+    
+    #agenda p{
         margin-bottom: 2%;
         color: #555555;
         font-size: 100%;
         text-align: left ;
+    }
+
+    #atividades img{
+        margin-bottom: 10%;
     }
 
     footer{
