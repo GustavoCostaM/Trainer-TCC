@@ -23,14 +23,20 @@ main{
   text-align: center;
   font-family: 'Open Sans', 'Inter', sans-serif;
   font-weight: bold;
+  margin-top: 2%;
+}
+
+main h3{
+  font-size: 175%;
 }
 
 #voltar{
   position: absolute;
+  margin-top: -10px;
 }
 
 #voltar i{
-  font-size: 150%;
+  font-size: 300%;
 }
 
 main form{
