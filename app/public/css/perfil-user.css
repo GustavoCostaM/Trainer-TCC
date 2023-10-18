@@ -58,6 +58,7 @@
     }
 
     .funcoes-perfil a{
+        width: 100%;
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -72,6 +73,10 @@
         margin-left: 1.5%;
         font-size: 125%;
         color: #f76c35;
+    }
+
+    .delete-perfil{
+        justify-content: flex-end;
     }
 
     .delete-perfil i{
