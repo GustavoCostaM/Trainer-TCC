@@ -28,7 +28,6 @@
           </span>
           <span class="esporte">
             <h3 class="t-esporte" style="color: #ff540b;">Esporte</h3>
-            <h4 class="text-esporte"><%- data.usuario.esporte.nome %></h4>
           </span>
         </div>
         <div class="button-bio">
@@ -109,18 +108,6 @@
               ><b style="color: #ff540b">Sport</b>!</span
             > <br>
             <form class="chave-pix-form" method="POST" action="/atualizar-chave-pix">
-              <%- data.erros && data.erros.sistema_erro ? `<span class="mensagem-erro">${data.erros.sistema_erro.msg}</span>` : "" %>
-                  <div class="form-gerar-pix">
-                    <label for="input-pix-key" class="label-chave-pix">Chave PIX</label>
-                    <input type="text" name="chave_pix" id="input-pix-key" <%-
-                    data.erros && data.erros.nome_erro ? `erro` : "" %>" name="nome"
-                    <%- data.input_values ? `value="${data.input_values.nome}"` : ""
-                    %>>
-                    <%- data.erros && data.erros.nome_erro ? `<span
-                class="mensagem-erro"
-                >${data.erros.nome_erro.msg}</span
-              >` : "" %>
-                  </div>
                 <div class="gerar-qrcode">
                     <button type="submit" class="gerar-btn">Adicionar chave PIX</button>
                 </div>

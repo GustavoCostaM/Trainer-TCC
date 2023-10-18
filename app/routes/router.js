@@ -42,7 +42,7 @@ router.get("/politicas", politicasControllerRead.viewPage);
 
 router.get("/termos", termosControllerRead.viewPage);
 
-router.get("/login", loginControllerRead.viewPage);
+router.get("/login", loginControllerRead.getPage);
 router.post("/login",
 validacaoFormulariosMiddleware.validacaoLogin,
 loginControllerAuth.autorizarUsuario);
