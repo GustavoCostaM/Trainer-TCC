@@ -21,7 +21,7 @@ class Usuario {
         return user;
     }
 
-    async createUser(data) {
+    async createUsuario(data) {
         await prisma.usuario.create({
             data
         })
