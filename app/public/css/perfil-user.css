@@ -1,0 +1,78 @@
+@media only screen and (max-width: 480px) {
+    @import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@300;400;700família= Open+Sans:wght@300;400;700;800 & =swap');
+    @import url('https://fonts.googleapis.com/css2?family= Inter:wght@100;400;700;900 & display=swap');
+
+    body{
+        background-color: #f9f9f9d1;
+      }
+
+    #logo{
+        width: 60%;
+        display: block;
+        margin: 1.5% auto 0;
+        }
+        
+    hr{
+      height: 2px;
+      background-color: #797979;
+      border: none;
+    
+    }
+
+    main{
+        font-family: 'Open Sans', sans-serif;
+        margin: 5% auto;
+        width: 90%;
+        color: #333333;
+    }
+
+
+    .tabs{
+        width: calc( 100vw - 50px);
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        margin: 10px 25px;
+    }
+    
+    #t-personais, #t-atividades{
+        text-decoration: none;
+        color:#333333;
+        font-weight: bold;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    #pSalvos{
+        display: none;
+    }
+    
+    #pSalvos.active{
+        display: block;
+    }
+    
+    #t-personais.active{
+        color: #ff5b00;
+    }
+
+
+
+
+
+
+
+
+    #atividades{
+        display: none;
+        flex-direction: column;
+        margin: 20px;
+    }
+    
+    #atividades.active{
+        display: flex;
+    }
+    
+    #t-atividades.active{
+        color: #ff5b00;
+    }
+}

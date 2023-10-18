@@ -26,36 +26,20 @@
             <h3 class="t-clube" style="color: #ff540b;">Estado</h3>
             <h4 class="text-clube"><%- data.usuario.estado %></h4>
           </span>
-          <span class="esporte">
-            <h3 class="t-esporte" style="color: #ff540b;">Esporte</h3>
-          </span>
-        </div>
-        <div class="button-bio">
-          <button class="b-doar"><a href="/#">Doar</a></button>
         </div>
 
-        <div class="info-meta">
-          <p class="desc-meta">Passagem para o Campeonato</p>
-          <div class="meta-icone">
-            <i class="bx bx-target-lock" style="color: #ff6300" id="target"></i>
-            <hr class="ls-animated" />
-          </div>
-          <p class="valor">máx: R$1,000</p>
-        </div>
       </section>
       <hr class="linha-bio" />
 
       <div class="container">
         <div class="tabs">
-          <h3 id="t-personais"  data-perfil-tab-title="personais">Meus Personais </h3>
+          <h3 id="t-personais"  class="active" data-perfil-tab-title="personais">Meus Personais </h3>
           <h3 id="t-atividades" data-perfil-tab-title="atividades">Minhas Atividades</h3>
-          <h3 id="t-doacoes" data-perfil-tab-title="doacao">Doação</h3>
-          <h3 id="t-metas" data-perfil-tab-title="meta">Metas</h3>
         </div>
 
         <!-- Personais Salvos -->
         <div class="tab-content">
-          <div id="pSalvos" data-perfil-tab="personais">
+          <div id="pSalvos" class="active" data-perfil-tab="personais">
             <h4>Personais Salvos</h4>
             <section class="container-personais">
               <div id="personais">
@@ -165,74 +149,6 @@
           <img src="/imagens/atividades_online.png" alt="">
 
           </div>
-
-          <!-- DOAÇÃO -->
-          <div id="doacao" data-perfil-tab="doacao">
-            <span class="titulo-3"
-              >Receba doações no <b style="color: #1406a7"> Inve</b
-              ><b style="color: #ff540b">Sport</b>!</span
-            > <br>
-            <form class="chave-pix-form" method="POST" action="/atualizar-chave-pix">
-                <div class="gerar-qrcode">
-                    <button type="submit" class="gerar-btn">Adicionar chave PIX</button>
-                </div>
-            </form>
-
-            <div class="qr-code-container">
-              <div class="plaquinha-pix">
-                <div class="qrcode-replace">
-                  <img src="" alt="" id="qr-code-image-generated">
-                </div>
-
-                <div class="">
-                  <div class="js-qr-code-description"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- METAS -->
-          <div id="meta" data-perfil-tab="meta">
-            <!-- <script src="/js/perfil/metas.js/"></script> -->
-            <span class="anda-meta">Metas em andamento:</span>
-            <section class="info-meta">
-              <p class="desc-meta">Passagem para o Campeonato</p>
-              <section class="meta-icone">
-                <i
-                  class="bx bx-target-lock"
-                  style="color: #ff6300"
-                  id="target">
-                </i>
-                <hr class="ls-animated" />
-              </section>
-              <p class="valor">máx: R$1,000</p>
-            </section>
-            <hr class="linha-meta" />
-            <span class="add-meta">Adicione sua meta</span>
-            <section class="row">
-              <input type="text" id="inputbox" placeholder="Nome da meta" />
-              <input
-                type="number"
-                id="inputbox2"
-                placeholder="Valor máximo da meta"/>
-              <button id="botao-add">Add</button>
-
-              <!-- 
-                <div class="info-meta">
-                  <p class="desc-meta">Passagem para o Campeonato</p>
-                  <div class="meta-icone">
-                    <i
-                      class="bx bx-target-lock"
-                      style="color: #ff6300"
-                      id="target">
-                    </i>
-                    <hr class="ls-animated" />
-                  </div>
-                  <p class="valor">máx: R$1,000</p>
-                </div> -->
-            </section>
-          </div>
-          
         </div>
       </div>
     </main>
