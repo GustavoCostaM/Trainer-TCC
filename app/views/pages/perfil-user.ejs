@@ -14,23 +14,23 @@
     <%- include('../templates/header-logo.ejs') %>
 
     <main>
-      <section>
-        <div class="pic-perfil">
-          <a href="/editar-perfil" class="edit-perfil">
-            <img src="/assets/perfil/edit-perfil.png" alt="edit-icon">Editar perfil
-          </a>
-        </div>
         <h2 class="titulo-perfil" id="logado">Olá <%- data.usuario.nome %>, seja <span>bem vindo!</span></h2>
         <h3 class="local"><%- data.usuario.cidade %> - <%- data.usuario.estado %></h3>
-      </section>
 
-      <hr class="linha-bio" />
+      <div class="pic-perfil">
+        <a href="/editar-perfil" class="edit-perfil">
+          <img src="/assets/perfil/edit-perfil.png" alt="edit-icon">Editar perfil
+        </a>
+      </div>
+
 
       <div class="container">
         <div class="tabs">
           <h3 id="t-personais"  class="active" data-perfil-tab-title="personais">Meus Personais </h3>
           <h3 id="t-atividades" data-perfil-tab-title="atividades">Minhas Atividades</h3>
         </div>
+
+      <hr class="linha-bio" />
 
         <!-- Personais Salvos -->
         <div class="tab-content">

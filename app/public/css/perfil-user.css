@@ -34,12 +34,20 @@
         text-transform: uppercase;
     }
 
-    .pic-perfil span{
+    .titulo-perfil span{
         color: #f76c35;
     }
 
-    .pic-perfil h2{
+    .titulo-perfil{
         text-align: center;
+        font-size: 150%;
+        font-weight: bolder;
+        margin-bottom: 5%;
+    }
+
+    .local{
+        font-size: 110%;
+        text-align: end;
     }
 
     .tabs{
@@ -116,16 +124,13 @@
       }
       
       #divSalvar{
-        margin: 5% 4% 0 0;
+        margin: 5% 2% 0 0;
         width: 5%;
       }
       
       #personais i{
-        position: absolute;
         color: #f76c35;
-        text-align: right;
         font-size: 130%;
-        z-index: 1;
       }
 
     #atividades{
