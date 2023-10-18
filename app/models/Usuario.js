@@ -2,7 +2,7 @@ const prisma = require("../../server/database/prismaClient");
 
 class Usuario {
     async findUserById(userId) {
-        const user = await prisma.Usuario.findUnique({
+        const user = await prisma.usuario.findUnique({
             where: {
                 id: userId
             }
@@ -12,7 +12,7 @@ class Usuario {
     }
 
     async findUserByEmail(userEmail) {
-        const user = await prisma.Usuario.findUnique({
+        const user = await prisma.usuario.findUnique({
             where: {
                 email: userEmail
             }
@@ -21,14 +21,14 @@ class Usuario {
         return user;
     }
 
-    async createUser(data) {
-        await prisma.Usuario.create({
+    /*async createUser(data) {
+        await prisma.usuario.create({
             data
         })
-    }
+    }*/
 
     async updateUserPassword(userEmail, userNewPassword) {
-        await prisma.Usuario.update({
+        await prisma.usuario.update({
             where: {
                 email: userEmail
             },
@@ -39,7 +39,7 @@ class Usuario {
     }
 
     async updateUserCustomerId(userId, customerId) {
-        await prisma.Usuario.update({
+        await prisma.usuario.update({
             where: {
                 id: userId
             },
@@ -50,7 +50,7 @@ class Usuario {
     }
 
     async updatePerfil(data, userId){
-        await prisma.Usuario.update({
+        await prisma.usuario.update({
             where: {
                 id: userId
             },
