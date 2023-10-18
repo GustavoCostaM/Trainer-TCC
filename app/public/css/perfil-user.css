@@ -51,6 +51,12 @@
         margin-bottom: 10%;
     }
 
+    .funcoes-perfil{
+        display: flex;
+    }
+
+    
+
     .tabs{
         display: flex;
         justify-content: space-between;
@@ -67,7 +73,7 @@
         border: solid #f76c35;
         height: 25px;
         text-decoration: none;
-        color:#333333;
+        color:#f76c35;
         font-weight: bold;
         font-size: 100%;
         cursor: pointer;
