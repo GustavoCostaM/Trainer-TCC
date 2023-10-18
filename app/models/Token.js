@@ -1,20 +1,27 @@
 const prisma = require("../../server/database/prismaClient");
 
 class Token {
-    async createToken(data) {
-        return await prisma.token.create({
-            data
-        });
-    }
-
     async findTokenById(tokenId) {
-        return await prisma.token.findUnique({
+        const token = await prisma.token.findUnique({
             where: {
                 id: tokenId
             }
         })
+
+        return token;
+    }
+
+    async createToken(token_email) {
+        const token = await prisma.token.create({
+            data: {
+                user_email: token_email
+            }
+        });
+
+        return token;
     }
 }
+
 
 const tokenModel = new Token();
 

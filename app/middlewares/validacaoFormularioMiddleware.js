@@ -21,8 +21,6 @@ class ValidacaoFormularios {
                 nome,
                 nome_de_usuario,
                 email,
-                senha,
-                confirmacao_senha,
                 telefone,
                 logradouro,
                 numero_residencial,
@@ -160,7 +158,7 @@ class ValidacaoFormularios {
 			.compare(senha, user.senha)
 			.then((auth) => {
 				if (auth) {
-					const token = jwt.sign({ userEmail: user.email }, process.env.SECRET);
+					const token = jwt.sign({ userId: user.id }, process.env.SECRET);
 
 					req.session.token = token;
 

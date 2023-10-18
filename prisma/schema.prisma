@@ -21,13 +21,15 @@ model Usuario {
     cidade             String @db.VarChar(130)
     estado             String @db.VarChar(130)
     cep                String @db.VarChar(9)
+    created_at       DateTime @default(now())
+    updated_at       DateTime @updatedAt
 
      tokens Token []
 }
 
 model Token {
     id         String   @id @default(uuid())
-    email      String
+    email      String   @db.VarChar(130)
     created_at DateTime @default(now())
 
     usuario Usuario @relation(fields: [email], references: [email])
