@@ -201,7 +201,7 @@ class ValidacaoFormularios {
 	async deletarUsuario(req, res, next) {
 		const { senha } = req.body;
 
-		const user = await usuarioModel.findUserByEmail(email);
+		const user = await usuarioModel.deleteUsuario(email);
 		
 		bcrypt
 			.compare(senha, user.senha)
