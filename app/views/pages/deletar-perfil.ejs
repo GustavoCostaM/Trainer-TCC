@@ -22,7 +22,7 @@
             <h3>VOCÊ DESEJA DELETAR SUA CONTA?</h3>
             <H4> Se realmente deseja insira sua senha</H4>
 
-			<form action="/deletar" method="post">
+			<form action="/deletar-perfil" method="post">
                 <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
                 
                 <label for="senha">Senha:</label>
@@ -34,7 +34,7 @@
                 <%- data.errors && data.errors.senha_error ? `<span class='erro-mensagem'>${data.errors.senha_error.msg}</span>` : "" %>
                 <br />
 
-				<input type="submit" value="Entrar" id="entrar" />
+				<input type="submit" value="Deletar" id="entrar" />
 			</form>
         </main>
         <%- include("../templates/footer.ejs") %>
