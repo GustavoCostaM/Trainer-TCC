@@ -8,7 +8,8 @@ class ValidacaoFormularios {
         this.validacaoCadastro = this.validacaoCadastro.bind(this);
         this.validacaoLogin = this.validacaoLogin.bind(this);
 		this.editarPerfilValidation = this.editarPerfilValidation.bind(this);
-    }
+		this.deletarUsuario = this.deletarUsuario.bind(this);
+	}
 
     validacaoCadastro(req, res, next) {
 		const errors = validationResult(req);
@@ -199,6 +200,9 @@ class ValidacaoFormularios {
 
 	async deletarUsuario(req, res, next) {
 		const { senha } = req.body;
+
+		const user = await usuarioModel.findUserByEmail(email);
+		
 		bcrypt
 			.compare(senha, user.senha)
 			.then((auth) => {
