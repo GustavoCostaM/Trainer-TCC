@@ -345,6 +345,10 @@ main section h5{
   box-shadow: 2px 3px 13px -5px;
 }
 
+#personais a{
+  display: contents;
+}
+
 #personais img{
   padding: 4%;
   background-color: #f76c35;
@@ -804,6 +808,10 @@ footer hr{
     margin-top: 10%;
     display: flex;
     justify-content: space-between;
+  }
+  
+  #verPerfil_Salvar a{
+    width: 100%;
   }
 
   #vPerfil{
