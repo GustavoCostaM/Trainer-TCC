@@ -199,18 +199,15 @@ class ValidacaoFormularios {
 	}
 
 	async deletarUsuario(req, res, next) {
-		const { senha } = req.body;
+		const {senha} = req.body;
 
-		const user = await usuarioModel.deleteUsuario(id);
-		
+		const user = await usuarioModel.findUserByEmail(email);
+
 		bcrypt
 			.compare(senha, user.senha)
-			.then((auth) => {
-				if (auth) {
-					const token = jwt.sign({ userId: user.id }, process.env.SECRET);
-
-					req.session.token = token;
-
+			.then((del) => {
+				if (del) {
+					
 					return next();
 				}
 
