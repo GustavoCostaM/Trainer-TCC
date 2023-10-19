@@ -141,6 +141,21 @@ main a{
   color: black;
 }
 
+#delete-perfil{
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+#delete-perfil i{
+    color: #555555;
+}
+
+#delete-perfil p{
+    margin-left: 1.5%;
+    color: #555555;
+}
+
 
 footer{
   width: 80%;

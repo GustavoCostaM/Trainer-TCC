@@ -193,3 +193,202 @@
       line-height: 1.5;
     }
 }
+
+@media only screen and (min-width:481px){
+  @import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@300;400;700família= Open+Sans:wght@300;400;700;800 & =swap');
+  @import url('https://fonts.googleapis.com/css2?family= Inter:wght@100;400;700;900 & display=swap');
+
+  body{
+    font-family: 'Open Sans', 'Inter', sans-serif;
+    margin: auto;
+    max-width: 1024px;
+    background-color: #f9f9f9d1;
+  }
+
+  #logo{
+    width: 50%;
+    display: block;
+    margin: 1.5% auto 0;
+    }
+    
+  hr{
+    height: 2px;
+    background-color: #797979;
+    border: none;
+  }
+
+  main{
+    max-width: 768px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5% auto;
+    width: 90%;
+    color: #333333;
+}
+
+#dados{
+    text-align: center;
+}
+
+#dados img{
+    width: 35%;
+    margin-bottom: 5%;
+}
+
+#dados h5{
+  font-weight: bold;
+  margin-bottom: 1%;
+  font-size: 160%;
+}
+
+#dados #profissional{
+  font-weight: bold;
+  color: #f76c35;
+  text-transform: uppercase;
+  font-size: 100%;
+  margin-bottom: 2%;
+}
+
+#dados h6{
+  font-family: 'Open Sans', 'Inter', sans-serif;
+  font-size: 110%;  
+}
+
+#dados p{
+  font-size: 115%;
+  margin: 5% 0 10%;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#salvos{
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+#salvos i{
+    font-size: 200%;
+    color: #f76c35;
+}
+
+#salvos p{
+    color: #f76c35;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+#buttons button{
+    width: 45%;
+    font-weight: bold;
+    font-size: 110%;
+    border: none;
+    background-color: #f76c35;
+    border-radius: 6px;
+    color: white;
+    height: 40px;
+}
+
+main h4{
+    text-transform:uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    margin-bottom: 10%;
+}
+
+main h4 span{
+  color: #f76c35;
+}
+
+#atividades{
+  display: flex;
+  margin-bottom: 10%;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 2px 3px 13px -5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#atividades div {
+  width: 40%;
+  padding: 4%;
+  background-color: #f76c35;
+  float:left;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+}
+
+#atividades h6{
+  font-size: 125%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#atividades #valor{
+  font-size: 175%;
+}
+
+#atividades button a{
+  text-decoration: none;
+  color: white;
+}
+
+#atividades button{
+  font-size: 110%;
+font-weight: bold;
+background-color: #f76c35;
+color: white;
+border-radius: 10px;
+margin: 0 5%;
+border: none;
+width: 40%;
+height: 40px;
+}
+
+footer{
+  width: 80%;
+  margin: 10% auto 50px auto;  
+  text-align: center;
+}
+#logoRodape{
+    width: 50%;
+}
+
+footer hr{
+  height: 1.5px;
+  color: #555555;
+}
+
+#icons{
+  margin: auto;
+  color: #f76c35;
+  font-size: 250%;
+  margin-bottom: 10px;
+}
+
+footer h5{
+  font-family: 'Open Sans', 'Inter', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 175%;
+}
+
+#links a{
+  font-size: 110%;
+  color: #555555;
+  font-family: 'Open Sans', 'Inter', sans-serif;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+}
