@@ -51,13 +51,7 @@
         margin-bottom: 10%;
     }
 
-    .funcoes-perfil{
-        display: flex;
-        margin-bottom: 10%;
-        justify-content: space-between;
-    }
-
-    .funcoes-perfil a{
+    .edit-perfil{
         width: 100%;
         display: flex;
         align-items: center;
@@ -75,18 +69,6 @@
         color: #f76c35;
     }
 
-    .delete-perfil{
-        justify-content: flex-end;
-    }
-
-    .delete-perfil i{
-        color: #555555;
-    }
-
-    .delete-perfil p{
-        margin-left: 1.5%;
-        color: #555555;
-    }
 
     .tabs{
         display: flex;
