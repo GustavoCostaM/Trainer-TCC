@@ -322,17 +322,17 @@ footer h5{
     color: black;
   }
 
-  .delete-perfil{
+  a.delete-perfil{
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
 }
 
-.delete-perfil i{
+a.delete-perfil i{
     color: #555555;
 }
 
-.delete-perfil p{
+a.delete-perfil p{
     margin-left: 1.5%;
     color: #555555;
 }
