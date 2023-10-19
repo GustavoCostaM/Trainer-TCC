@@ -116,6 +116,10 @@
         border-radius: 10px 10px 10px 10px;
         box-shadow: 2px 3px 13px -5px;
       }
+    #personais a{
+    color: #333333;
+  display: contents;
+    }
       
       #personais img{
         padding: 4%;
