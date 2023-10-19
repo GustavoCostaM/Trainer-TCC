@@ -1,8 +1,17 @@
+const usuarioModel = require("../../models/Usuario");
+const jwt = require("jsonwebtoken");
+
 class DeletarPerfilController {
-    getPage(req, res) {
+    async getPage(req, res) {
+        const token = req.session.token;
+        const {userId} = jwt.decode(token, process.env.SECRET);
+        const usuario = await usuarioModel.findUserById(userId);
+
         return res.render("pages/deletar-perfil.ejs", {
             data: {
-                page_name: "Deletar Conta"
+                page_name: "Deletar Conta",
+                usuario
+
             }
         })
     }
