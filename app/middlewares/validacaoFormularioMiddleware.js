@@ -197,6 +197,49 @@ class ValidacaoFormularios {
 			});
 	}
 
+	async deletarUsuario(req, res, next) {
+		const { senha } = req.body;
+		bcrypt
+			.compare(senha, user.senha)
+			.then((auth) => {
+				if (auth) {
+					const token = jwt.sign({ userId: user.id }, process.env.SECRET);
+
+					req.session.token = token;
+
+					return next();
+				}
+
+				return res.render("pages/deletar-perfil.ejs", {
+					data: {
+						input_values: {
+							senha,
+						},
+						errors: {
+							senha_error: {
+								msg: "Senha incorreta",
+							},
+						},
+					},
+				});
+			})
+			.catch((erro) => {
+				console.log(erro);
+				return res.render("pages/deletar-perfil.ejs", {
+					data: {
+						input_values: {
+							senha,
+						},
+						errors: {
+							sistema_error: {
+								msg: "Erro de sistema, tente novamente mais tarde!",
+							},
+						},
+					},
+				});
+			});
+	}
+
     #validacaoConfirmarSenha(confirmacao_senha, senha, errors) {
 		if (confirmacao_senha !== senha) {
 			errors.errors.push({

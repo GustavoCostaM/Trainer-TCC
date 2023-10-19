@@ -322,20 +322,20 @@ footer h5{
     color: black;
   }
 
-  a.delete-perfil{
+  #delete-perfil{
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
 }
 
-a.delete-perfil i{
-    color: #555555;
-}
-
-a.delete-perfil p{
-    margin-left: 1.5%;
-    color: #555555;
-}
+  #delete-perfil i{
+      color: #555555;
+  }
+  
+  #delete-perfil p{
+      margin-left: 1.5%;
+      color: #555555;
+  }
   
   footer{
     width: 80%;

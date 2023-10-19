@@ -29,6 +29,9 @@ const logoutControllerRead = require("../controllers/perfilControllers/logoutCon
 const editarPerfilControllerRead = require("../controllers/perfilControllers/editarPerfilControllerRead");
 const editarPerfilControllerUpdate = require("../controllers/perfilControllers/editarPerfilControllerUpdate");
 
+const deletarPerfilControllerRead = require("../controllers/perfilControllers/deletarPerfilControllerRead");
+const deletarPerfilControllerDelete = require("../controllers/perfilControllers/deletarPerfilControllerDelete");
+
 const homePerfilControllerRead = require("../controllers/homePerfilController/homePerfilControllerRead");
 
 
@@ -67,6 +70,14 @@ autenticacaoMiddleware.validateJWT,
 validacaoRegrasMiddleware.editarPerfilValidationRules,
 validacaoFormulariosMiddleware.editarPerfilValidation,
 editarPerfilControllerUpdate.editUser);
+
+router.get("/deletar-perfil",
+deletarPerfilControllerRead.getPage);
+
+router.post("/deletar-perfil",
+autenticacaoMiddleware.validateJWT,
+validacaoFormulariosMiddleware.deletarUsuario,
+deletarPerfilControllerDelete.deleteUsuario);
 
 router.get("/perfil-user",
 autenticacaoMiddleware.validateJWT,

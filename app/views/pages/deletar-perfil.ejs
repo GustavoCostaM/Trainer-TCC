@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <%- include("../templates/head.ejs") %>
+		<link href="/css/login.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%- data.page %></title>
+	</head>
+	<body>
+		<%- include("../templates/header-logo.ejs") %>
+
+		<main>
+
+            <div id="voltar">
+                <a href="/perfil-user">
+                <i class='bx bx-left-arrow-alt'></i>
+                </a>
+        </div>
+
+            <h3>VOCÊ DESEJA DELETAR SUA CONTA?</h3>
+            <H4> Se realmente deseja insira sua senha</H4>
+
+			<form action="/deletar" method="post">
+                <%- data.errors && data.errors.sistema_error ? `<span class='erro-mensagem'>${data.errors.sistema_error.msg}</span>` : "" %>
+                
+                <label for="senha">Senha:</label>
+				<input type="password" placeholder="••••••••••" name="senha" id="senha"
+                <%- data.input_values ? `value="${data.input_values.senha}"` : "" %>
+                <%- data.errors && data.errors.senha_error ? `class="erro"` : "" %>
+                /><br />
+
+                <%- data.errors && data.errors.senha_error ? `<span class='erro-mensagem'>${data.errors.senha_error.msg}</span>` : "" %>
+                <br />
+
+				<input type="submit" value="Entrar" id="entrar" />
+			</form>
+        </main>
+        <%- include("../templates/footer.ejs") %>
+	</body>
+</html>
